@@ -1,0 +1,1823 @@
+INFO 2025-04-26 15:27:34,464 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 15:28:40,133 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 15:31:14,669 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 15:32:01,465 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 15:36:26,786 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 15:38:40,379 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 15:39:58,504 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 15:47:48,909 autoreload C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\Lib\site-packages\environ\compat.py changed, reloading.
+INFO 2025-04-26 15:47:48,914 autoreload C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\Lib\site-packages\environ\environ.py changed, reloading.
+INFO 2025-04-26 15:47:51,583 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 15:47:51,584 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 15:47:53,888 autoreload C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\Lib\site-packages\django\__init__.py changed, reloading.
+INFO 2025-04-26 15:47:53,889 autoreload C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\Lib\site-packages\django\conf\locale\__init__.py changed, reloading.
+INFO 2025-04-26 15:57:28,845 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 15:59:09,466 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:04:10,299 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:07:21,417 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:08:34,744 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:10:06,169 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:11:08,964 autoreload D:\l_me\sec\backend\banking_api\settings.py changed, reloading.
+INFO 2025-04-26 16:11:10,304 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:11:36,964 autoreload D:\l_me\sec\backend\banking_api\settings.py changed, reloading.
+INFO 2025-04-26 16:11:37,872 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:11:40,408 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:24:50,025 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:26:38,855 basehttp "OPTIONS /api/v1/auth/login/ HTTP/1.1" 200 0
+ERROR 2025-04-26 16:26:39,342 log Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 57, in __call__
+    if self.is_ip_banned(ip_address):
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 119, in is_ip_banned
+    return BannedIP.objects.filter(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_active' into field. Choices are: added_by, added_by_id, blacklisted_at, expires_at, id, ip_address, reason
+ERROR 2025-04-26 16:26:39,347 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 500 121689
+ERROR 2025-04-26 16:27:05,455 log Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 57, in __call__
+    if self.is_ip_banned(ip_address):
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 119, in is_ip_banned
+    return BannedIP.objects.filter(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_active' into field. Choices are: added_by, added_by_id, blacklisted_at, expires_at, id, ip_address, reason
+ERROR 2025-04-26 16:27:05,457 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 500 121695
+INFO 2025-04-26 16:36:21,145 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-26 16:37:18,892 log Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 57, in __call__
+    if self.is_ip_banned(ip_address):
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 119, in is_ip_banned
+    return BannedIP.objects.filter(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_active' into field. Choices are: added_by, added_by_id, blacklisted_at, expires_at, id, ip_address, reason
+ERROR 2025-04-26 16:37:18,928 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 500 121689
+INFO 2025-04-26 16:37:30,953 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:42:26,628 basehttp "OPTIONS /api/v1/auth/register/ HTTP/1.1" 200 0
+ERROR 2025-04-26 16:42:26,663 log Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 57, in __call__
+    if self.is_ip_banned(ip_address):
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 119, in is_ip_banned
+    return BannedIP.objects.filter(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_active' into field. Choices are: added_by, added_by_id, blacklisted_at, expires_at, id, ip_address, reason
+ERROR 2025-04-26 16:42:26,666 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 500 121720
+ERROR 2025-04-26 16:42:46,981 log Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 57, in __call__
+    if self.is_ip_banned(ip_address):
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 119, in is_ip_banned
+    return BannedIP.objects.filter(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_active' into field. Choices are: added_by, added_by_id, blacklisted_at, expires_at, id, ip_address, reason
+ERROR 2025-04-26 16:42:46,982 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 500 121720
+INFO 2025-04-26 16:43:26,822 autoreload D:\l_me\sec\backend\banking_api\security\middleware.py changed, reloading.
+INFO 2025-04-26 16:43:27,646 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:43:34,664 autoreload D:\l_me\sec\backend\banking_api\security\middleware.py changed, reloading.
+INFO 2025-04-26 16:43:35,391 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-26 16:43:39,028 log Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: security_ipblacklist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 57, in __call__
+    if self.is_ip_banned(ip_address):
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 123, in is_ip_banned
+    ).exists()
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: security_ipblacklist
+ERROR 2025-04-26 16:43:39,073 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 500 137942
+ERROR 2025-04-26 16:43:52,289 log Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: security_ipblacklist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 57, in __call__
+    if self.is_ip_banned(ip_address):
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 123, in is_ip_banned
+    ).exists()
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: security_ipblacklist
+ERROR 2025-04-26 16:43:52,291 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 500 137942
+ERROR 2025-04-26 16:44:02,685 log Internal Server Error: /api/v1/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: security_ipblacklist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 57, in __call__
+    if self.is_ip_banned(ip_address):
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 123, in is_ip_banned
+    ).exists()
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: security_ipblacklist
+ERROR 2025-04-26 16:44:02,686 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 500 137941
+INFO 2025-04-26 16:45:50,790 autoreload D:\l_me\sec\backend\banking_api\security\middleware.py changed, reloading.
+INFO 2025-04-26 16:45:51,961 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:48:34,107 autoreload D:\l_me\sec\backend\banking_api\security\middleware.py changed, reloading.
+INFO 2025-04-26 16:48:35,072 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-26 16:48:41,178 middleware Suspicious content detected from 127.0.0.1
+ERROR 2025-04-26 16:48:41,181 middleware Could not log security event due to database error: no such table: security_securityauditlog
+WARNING 2025-04-26 16:48:41,182 log Bad Request: /api/v1/auth/register/
+WARNING 2025-04-26 16:48:41,183 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 400 84
+ERROR 2025-04-26 16:49:08,598 log Internal Server Error: /api/v1/auth/login/
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\l_me\sec\backend\banking_api\security\middleware.py", line 112, in __call__
+    response = self.get_response(request)
+AttributeError: 'SecurityMiddleware' object has no attribute 'get_response'
+ERROR 2025-04-26 16:49:08,599 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 500 73935
+WARNING 2025-04-26 16:49:30,455 middleware Suspicious content detected from 127.0.0.1
+ERROR 2025-04-26 16:49:30,456 middleware Could not log security event due to database error: no such table: security_securityauditlog
+WARNING 2025-04-26 16:49:30,456 log Bad Request: /api/v1/auth/register/
+WARNING 2025-04-26 16:49:30,456 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 400 84
+WARNING 2025-04-26 16:49:36,864 middleware Suspicious content detected from 127.0.0.1
+ERROR 2025-04-26 16:49:36,868 middleware Could not log security event due to database error: no such table: security_securityauditlog
+WARNING 2025-04-26 16:49:36,869 log Bad Request: /api/v1/auth/register/
+WARNING 2025-04-26 16:49:36,870 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 400 84
+INFO 2025-04-26 16:50:19,025 autoreload D:\l_me\sec\backend\banking_api\security\middleware.py changed, reloading.
+INFO 2025-04-26 16:50:19,774 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:51:06,645 autoreload D:\l_me\sec\backend\banking_api\security\middleware.py changed, reloading.
+INFO 2025-04-26 16:51:07,549 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:51:14,618 autoreload D:\l_me\sec\backend\banking_api\security\middleware.py changed, reloading.
+INFO 2025-04-26 16:51:15,997 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:51:22,023 autoreload D:\l_me\sec\backend\banking_api\security\middleware.py changed, reloading.
+INFO 2025-04-26 16:51:22,733 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:51:27,665 autoreload D:\l_me\sec\backend\banking_api\security\middleware.py changed, reloading.
+INFO 2025-04-26 16:51:28,340 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-26 16:51:38,136 middleware Suspicious content detected from 127.0.0.1
+ERROR 2025-04-26 16:51:38,138 middleware Could not log security event due to database error: no such table: security_securityauditlog
+WARNING 2025-04-26 16:51:38,139 log Bad Request: /api/v1/auth/register/
+WARNING 2025-04-26 16:51:38,139 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 400 84
+INFO 2025-04-26 16:52:20,702 autoreload D:\l_me\sec\backend\banking_api\security\middleware.py changed, reloading.
+INFO 2025-04-26 16:52:21,489 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:53:22,765 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:53:25,608 autoreload D:\l_me\sec\backend\banking_api\security\middleware.py changed, reloading.
+INFO 2025-04-26 16:53:26,278 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 16:59:33,091 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-26 16:59:45,444 middleware Suspicious content detected from 127.0.0.1
+ERROR 2025-04-26 16:59:45,446 middleware Could not log security event due to database error: no such table: main.accounts_user
+WARNING 2025-04-26 16:59:45,448 log Bad Request: /api/v1/auth/register/
+WARNING 2025-04-26 16:59:45,448 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 400 84
+INFO 2025-04-26 17:16:54,151 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-26 17:16:58,937 middleware Suspicious content detected from 127.0.0.1
+WARNING 2025-04-26 17:16:58,945 log Bad Request: /api/v1/auth/register/
+WARNING 2025-04-26 17:16:58,946 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 400 84
+INFO 2025-04-26 17:22:36,407 autoreload D:\l_me\sec\backend\banking_api\security\middleware.py changed, reloading.
+INFO 2025-04-26 17:22:37,294 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:23:16,909 autoreload D:\l_me\sec\backend\banking_api\custom_auth\serializers.py changed, reloading.
+INFO 2025-04-26 17:23:17,710 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:24:09,904 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:24:10,668 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:26:54,255 autoreload D:\l_me\sec\backend\banking_api\security\middleware.py changed, reloading.
+INFO 2025-04-26 17:26:55,142 autoreload Watching for file changes with StatReloader
+CRITICAL 2025-04-26 17:27:27,611 exception_handlers Unhandled exception [ERR-1745668647]: AbstractConnection.__init__() got an unexpected keyword argument 'ssl_cert_reqs'
+ERROR 2025-04-26 17:27:27,612 log Internal Server Error: /api/v1/auth/register/
+ERROR 2025-04-26 17:27:27,613 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 500 143
+INFO 2025-04-26 17:28:14,699 autoreload D:\l_me\sec\backend\banking_api\settings.py changed, reloading.
+INFO 2025-04-26 17:28:15,497 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:28:46,601 autoreload D:\l_me\sec\backend\banking_api\custom_auth\models.py changed, reloading.
+INFO 2025-04-26 17:28:47,458 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:30:03,083 autoreload D:\l_me\sec\backend\banking_api\settings.py changed, reloading.
+INFO 2025-04-26 17:30:03,793 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:30:49,530 autoreload D:\l_me\sec\backend\banking_api\custom_auth\models.py changed, reloading.
+INFO 2025-04-26 17:30:50,211 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:30:55,804 autoreload D:\l_me\sec\backend\banking_api\custom_auth\models.py changed, reloading.
+INFO 2025-04-26 17:30:56,460 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:31:47,336 autoreload D:\l_me\sec\backend\banking_api\custom_auth\models.py changed, reloading.
+INFO 2025-04-26 17:31:48,197 autoreload Watching for file changes with StatReloader
+CRITICAL 2025-04-26 17:32:12,457 exception_handlers Unhandled exception [ERR-1745668932]: Error 10061 connecting to 127.0.0.1:6379. No connection could be made because the target machine actively refused it.
+ERROR 2025-04-26 17:32:12,457 log Internal Server Error: /api/v1/auth/register/
+ERROR 2025-04-26 17:32:12,459 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 500 143
+INFO 2025-04-26 17:33:16,603 autoreload D:\l_me\sec\backend\banking_api\settings.py changed, reloading.
+INFO 2025-04-26 17:33:17,565 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:33:44,854 autoreload D:\l_me\sec\backend\banking_api\__init__.py changed, reloading.
+INFO 2025-04-26 17:33:48,142 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:33:50,187 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:33:53,215 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:34:07,842 autoreload D:\l_me\sec\backend\banking_api\custom_auth\serializers.py changed, reloading.
+INFO 2025-04-26 17:34:10,860 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:34:47,668 autoreload D:\l_me\sec\backend\banking_api\custom_auth\serializers.py changed, reloading.
+INFO 2025-04-26 17:34:50,657 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-26 17:35:33,022 views Registration error: name 're' is not defined
+Traceback (most recent call last):
+  File "D:\l_me\sec\backend\banking_api\custom_auth\views.py", line 177, in post
+    sanitized_data = self._sanitize_registration_data(request.data)
+  File "D:\l_me\sec\backend\banking_api\custom_auth\views.py", line 288, in _sanitize_registration_data
+    sanitized['phone'] = re.sub(r'[^\d\+\-\s\(\)]', '', data['phone'])[:20]
+NameError: name 're' is not defined
+ERROR 2025-04-26 17:35:33,023 log Internal Server Error: /api/v1/auth/register/
+ERROR 2025-04-26 17:35:33,023 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 500 68
+INFO 2025-04-26 17:36:30,242 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:36:31,083 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:36:48,559 autoreload D:\l_me\sec\backend\banking_api\custom_auth\serializers.py changed, reloading.
+INFO 2025-04-26 17:36:49,409 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:37:27,963 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:37:28,814 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:37:49,445 autoreload D:\l_me\sec\backend\banking_api\custom_auth\serializers.py changed, reloading.
+INFO 2025-04-26 17:37:50,254 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-26 17:38:39,158 views Registration error: UserManager.create_user() missing 1 required positional argument: 'username'
+Traceback (most recent call last):
+  File "D:\l_me\sec\backend\banking_api\custom_auth\views.py", line 186, in post
+    user = serializer.save()
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\l_me\sec\backend\banking_api\custom_auth\serializers.py", line 164, in create
+    user = User.objects.create_user(**validated_data)
+TypeError: UserManager.create_user() missing 1 required positional argument: 'username'
+ERROR 2025-04-26 17:38:39,161 log Internal Server Error: /api/v1/auth/register/
+ERROR 2025-04-26 17:38:39,162 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 500 68
+ERROR 2025-04-26 17:38:48,921 views Registration error: UserManager.create_user() missing 1 required positional argument: 'username'
+Traceback (most recent call last):
+  File "D:\l_me\sec\backend\banking_api\custom_auth\views.py", line 186, in post
+    user = serializer.save()
+  File "C:\Users\LENOVO\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "D:\l_me\sec\backend\banking_api\custom_auth\serializers.py", line 164, in create
+    user = User.objects.create_user(**validated_data)
+TypeError: UserManager.create_user() missing 1 required positional argument: 'username'
+ERROR 2025-04-26 17:38:48,922 log Internal Server Error: /api/v1/auth/register/
+ERROR 2025-04-26 17:38:48,922 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 500 68
+INFO 2025-04-26 17:39:38,254 autoreload D:\l_me\sec\backend\banking_api\custom_auth\serializers.py changed, reloading.
+INFO 2025-04-26 17:39:39,065 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:39:54,539 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:39:55,371 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:40:10,866 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:40:11,707 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:40:41,080 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 201 187
+INFO 2025-04-26 17:43:00,726 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:43:02,377 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:43:32,450 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 17:43:41,349 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 17:43:52,710 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:43:53,563 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:44:03,882 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+WARNING 2025-04-26 17:45:03,018 log Bad Request: /api/v1/auth/register/
+WARNING 2025-04-26 17:45:03,019 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 400 58
+INFO 2025-04-26 17:45:13,635 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:45:14,433 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:45:28,817 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:45:29,631 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:45:42,953 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+WARNING 2025-04-26 17:46:09,025 log Bad Request: /api/v1/auth/register/
+WARNING 2025-04-26 17:46:09,026 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 400 58
+INFO 2025-04-26 17:47:27,120 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:47:28,049 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:47:38,460 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:47:39,317 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:48:02,731 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:48:03,596 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:48:52,176 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:48:52,948 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:51:07,823 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:51:08,611 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:51:10,129 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:51:11,030 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:51:19,125 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:54:18,499 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:54:19,278 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 17:54:21,123 autoreload D:\l_me\sec\backend\banking_api\custom_auth\views.py changed, reloading.
+INFO 2025-04-26 17:54:21,887 autoreload Watching for file changes with StatReloader
+WARNING 2025-04-26 17:54:41,752 log Bad Request: /api/v1/auth/register/
+WARNING 2025-04-26 17:54:41,752 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 400 112
+INFO 2025-04-26 17:54:58,871 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 18:00:31,661 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 18:00:31,743 basehttp "OPTIONS /api/v1/accounts/ HTTP/1.1" 200 0
+INFO 2025-04-26 18:00:31,744 basehttp "OPTIONS /api/v1/accounts/ HTTP/1.1" 200 0
+WARNING 2025-04-26 18:00:31,918 log Not Found: /api/v1/accounts/
+WARNING 2025-04-26 18:00:31,919 basehttp "GET /api/v1/accounts/ HTTP/1.1" 404 4621
+WARNING 2025-04-26 18:00:31,927 log Not Found: /api/v1/accounts/
+WARNING 2025-04-26 18:00:31,928 basehttp "GET /api/v1/accounts/ HTTP/1.1" 404 4621
+WARNING 2025-04-26 18:00:55,007 log Not Found: /api/v1/accounts/
+WARNING 2025-04-26 18:00:55,008 basehttp "GET /api/v1/accounts/ HTTP/1.1" 404 4621
+WARNING 2025-04-26 18:00:55,020 log Not Found: /api/v1/accounts/
+WARNING 2025-04-26 18:00:55,021 basehttp "GET /api/v1/accounts/ HTTP/1.1" 404 4621
+INFO 2025-04-26 18:01:27,624 basehttp "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-04-26 18:01:27,625 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+INFO 2025-04-26 18:01:27,628 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+INFO 2025-04-26 18:01:27,628 basehttp "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-04-26 18:01:27,631 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+INFO 2025-04-26 18:01:27,631 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+INFO 2025-04-26 18:01:27,696 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:01:27,705 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:01:27,740 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:01:27,745 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:01:27,764 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:01:27,792 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+WARNING 2025-04-26 18:01:27,852 log Not Found: /api/v1/accounts/
+WARNING 2025-04-26 18:01:27,853 basehttp "GET /api/v1/accounts/ HTTP/1.1" 404 4621
+WARNING 2025-04-26 18:01:27,873 log Not Found: /api/v1/accounts/
+WARNING 2025-04-26 18:01:27,874 basehttp "GET /api/v1/accounts/ HTTP/1.1" 404 4621
+INFO 2025-04-26 18:01:28,105 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:09,238 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:02:09,263 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:02:09,276 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:09,301 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:09,325 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:09,359 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:09,494 basehttp "OPTIONS /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 0
+INFO 2025-04-26 18:02:09,501 basehttp "OPTIONS /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 0
+INFO 2025-04-26 18:02:09,517 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:02:09,535 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:02:09,548 basehttp "OPTIONS /api/v1/transactions/recent/?limit=5 HTTP/1.1" 200 0
+WARNING 2025-04-26 18:02:09,575 log Not Found: /api/v1/transactions/recent/
+WARNING 2025-04-26 18:02:09,577 basehttp "GET /api/v1/transactions/recent/?limit=5 HTTP/1.1" 404 5412
+WARNING 2025-04-26 18:02:09,602 log Not Found: /api/v1/transactions/recent/
+WARNING 2025-04-26 18:02:09,603 basehttp "GET /api/v1/transactions/recent/?limit=5 HTTP/1.1" 404 5412
+INFO 2025-04-26 18:02:09,732 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:10,084 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:10,105 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:02:10,120 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:10,135 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:02:10,154 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:10,173 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:11,033 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:28,537 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:02:28,546 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:28,587 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:02:28,597 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:28,632 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:02:28,655 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:28,672 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:28,712 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:28,737 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:02:28,746 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:28,768 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:28,786 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:28,871 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:02:28,892 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+WARNING 2025-04-26 18:02:28,910 log Not Found: /api/v1/transactions/recent/
+WARNING 2025-04-26 18:02:28,912 basehttp "GET /api/v1/transactions/recent/?limit=5 HTTP/1.1" 404 5412
+WARNING 2025-04-26 18:02:28,934 log Not Found: /api/v1/transactions/recent/
+WARNING 2025-04-26 18:02:28,936 basehttp "GET /api/v1/transactions/recent/?limit=5 HTTP/1.1" 404 5412
+INFO 2025-04-26 18:02:29,060 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:29,077 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:50,403 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:02:50,413 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:50,428 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:02:50,441 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:50,459 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:50,484 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:02:50,601 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:02:50,619 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+WARNING 2025-04-26 18:02:50,635 log Not Found: /api/v1/transactions/recent/
+WARNING 2025-04-26 18:02:50,637 basehttp "GET /api/v1/transactions/recent/?limit=5 HTTP/1.1" 404 5412
+WARNING 2025-04-26 18:02:50,655 log Not Found: /api/v1/transactions/recent/
+WARNING 2025-04-26 18:02:50,656 basehttp "GET /api/v1/transactions/recent/?limit=5 HTTP/1.1" 404 5412
+INFO 2025-04-26 18:02:50,831 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:03:43,847 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:03:43,856 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+WARNING 2025-04-26 18:03:43,874 log Not Found: /api/v1/transactions/recent/
+WARNING 2025-04-26 18:03:43,876 basehttp "GET /api/v1/transactions/recent/?limit=5 HTTP/1.1" 404 5412
+WARNING 2025-04-26 18:03:43,892 log Not Found: /api/v1/transactions/recent/
+WARNING 2025-04-26 18:03:43,893 basehttp "GET /api/v1/transactions/recent/?limit=5 HTTP/1.1" 404 5412
+INFO 2025-04-26 18:04:48,505 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:04:48,513 basehttp "OPTIONS /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 0
+ERROR 2025-04-26 18:04:48,635 exception_handlers Database error [ERR-1745670888]: no such table: transactions_transaction
+ERROR 2025-04-26 18:04:48,636 log Internal Server Error: /api/v1/transactions/list/
+ERROR 2025-04-26 18:04:48,636 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 500 114
+INFO 2025-04-26 18:05:06,658 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+ERROR 2025-04-26 18:05:06,671 exception_handlers Database error [ERR-1745670906]: no such table: transactions_transaction
+ERROR 2025-04-26 18:05:06,672 log Internal Server Error: /api/v1/transactions/list/
+ERROR 2025-04-26 18:05:06,672 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 500 114
+INFO 2025-04-26 18:05:18,848 basehttp "OPTIONS /api/v1/transactions/list/ HTTP/1.1" 200 0
+INFO 2025-04-26 18:05:18,848 basehttp "OPTIONS /api/v1/transactions/list/ HTTP/1.1" 200 0
+ERROR 2025-04-26 18:05:18,861 exception_handlers Database error [ERR-1745670918]: no such table: transactions_transaction
+ERROR 2025-04-26 18:05:18,862 log Internal Server Error: /api/v1/transactions/list/
+ERROR 2025-04-26 18:05:18,863 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 500 114
+ERROR 2025-04-26 18:05:18,875 exception_handlers Database error [ERR-1745670918]: no such table: transactions_transaction
+ERROR 2025-04-26 18:05:18,876 log Internal Server Error: /api/v1/transactions/list/
+ERROR 2025-04-26 18:05:18,877 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 500 114
+INFO 2025-04-26 18:05:26,438 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:05:26,446 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+ERROR 2025-04-26 18:05:26,449 exception_handlers Database error [ERR-1745670926]: no such table: transactions_transaction
+ERROR 2025-04-26 18:05:26,450 log Internal Server Error: /api/v1/transactions/list/
+ERROR 2025-04-26 18:05:26,451 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 500 114
+ERROR 2025-04-26 18:05:26,459 exception_handlers Database error [ERR-1745670926]: no such table: transactions_transaction
+ERROR 2025-04-26 18:05:26,459 log Internal Server Error: /api/v1/transactions/list/
+ERROR 2025-04-26 18:05:26,460 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 500 114
+ERROR 2025-04-26 18:05:37,760 exception_handlers Database error [ERR-1745670937]: no such table: transactions_transaction
+ERROR 2025-04-26 18:05:37,760 log Internal Server Error: /api/v1/transactions/list/
+ERROR 2025-04-26 18:05:37,761 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 500 114
+ERROR 2025-04-26 18:05:37,768 exception_handlers Database error [ERR-1745670937]: no such table: transactions_transaction
+ERROR 2025-04-26 18:05:37,768 log Internal Server Error: /api/v1/transactions/list/
+ERROR 2025-04-26 18:05:37,769 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 500 114
+INFO 2025-04-26 18:07:56,839 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:07:56,850 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:07:56,875 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:07:56,886 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:07:56,900 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:07:56,927 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:07:57,020 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:07:57,028 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:08:02,175 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:02,189 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:08:02,200 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:02,227 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:02,263 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:02,285 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:08:02,386 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:08:02,396 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:08:02,410 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:08:02,420 basehttp "OPTIONS /api/v1/notifications/?limit=5&unreadOnly=true HTTP/1.1" 200 0
+INFO 2025-04-26 18:08:02,428 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+WARNING 2025-04-26 18:08:02,441 log Not Found: /api/v1/notifications/
+WARNING 2025-04-26 18:08:02,442 basehttp "GET /api/v1/notifications/?limit=5&unreadOnly=true HTTP/1.1" 404 4651
+WARNING 2025-04-26 18:08:02,460 log Not Found: /api/v1/notifications/
+WARNING 2025-04-26 18:08:02,462 basehttp "GET /api/v1/notifications/?limit=5&unreadOnly=true HTTP/1.1" 404 4651
+INFO 2025-04-26 18:08:04,200 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:08:04,220 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:08:04,228 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:04,247 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:04,260 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:04,294 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:04,408 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:08:04,419 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:08:04,425 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:08:04,442 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+WARNING 2025-04-26 18:08:04,456 log Not Found: /api/v1/notifications/
+WARNING 2025-04-26 18:08:04,456 basehttp "GET /api/v1/notifications/?limit=5&unreadOnly=true HTTP/1.1" 404 4651
+WARNING 2025-04-26 18:08:04,475 log Not Found: /api/v1/notifications/
+WARNING 2025-04-26 18:08:04,476 basehttp "GET /api/v1/notifications/?limit=5&unreadOnly=true HTTP/1.1" 404 4651
+INFO 2025-04-26 18:08:09,351 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:09,419 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:08:09,443 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:09,476 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:09,513 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:08:09,534 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:09,624 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:08:09,640 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:08:09,642 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:08:09,657 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+WARNING 2025-04-26 18:08:09,670 log Not Found: /api/v1/notifications/
+WARNING 2025-04-26 18:08:09,671 basehttp "GET /api/v1/notifications/?limit=5&unreadOnly=true HTTP/1.1" 404 4651
+WARNING 2025-04-26 18:08:09,689 log Not Found: /api/v1/notifications/
+WARNING 2025-04-26 18:08:09,690 basehttp "GET /api/v1/notifications/?limit=5&unreadOnly=true HTTP/1.1" 404 4651
+INFO 2025-04-26 18:08:12,278 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:12,288 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:08:12,307 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:08:12,322 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:12,327 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:12,362 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:12,430 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:08:12,436 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:08:12,454 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:08:12,469 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+WARNING 2025-04-26 18:08:12,476 log Not Found: /api/v1/notifications/
+WARNING 2025-04-26 18:08:12,477 basehttp "GET /api/v1/notifications/?limit=5&unreadOnly=true HTTP/1.1" 404 4651
+WARNING 2025-04-26 18:08:12,489 log Not Found: /api/v1/notifications/
+WARNING 2025-04-26 18:08:12,490 basehttp "GET /api/v1/notifications/?limit=5&unreadOnly=true HTTP/1.1" 404 4651
+INFO 2025-04-26 18:08:16,705 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:16,719 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:08:16,726 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:16,749 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:16,776 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:08:16,806 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:08:16,812 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:08:16,824 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:08:16,853 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:08:16,865 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+WARNING 2025-04-26 18:08:16,875 log Not Found: /api/v1/notifications/
+WARNING 2025-04-26 18:08:16,876 basehttp "GET /api/v1/notifications/?limit=5&unreadOnly=true HTTP/1.1" 404 4651
+WARNING 2025-04-26 18:08:16,891 log Not Found: /api/v1/notifications/
+WARNING 2025-04-26 18:08:16,892 basehttp "GET /api/v1/notifications/?limit=5&unreadOnly=true HTTP/1.1" 404 4651
+INFO 2025-04-26 18:09:43,809 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:09:43,823 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:09:43,831 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:09:43,857 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:09:43,881 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:09:43,902 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:09:43,959 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:09:43,973 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:09:43,985 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:09:43,997 basehttp "OPTIONS /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 0
+INFO 2025-04-26 18:09:44,010 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+ERROR 2025-04-26 18:09:44,027 exception_handlers Database error [ERR-1745671184]: no such table: notifications_notification
+ERROR 2025-04-26 18:09:44,027 log Internal Server Error: /api/v1/notifications/list/
+ERROR 2025-04-26 18:09:44,029 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 500 114
+ERROR 2025-04-26 18:09:44,046 exception_handlers Database error [ERR-1745671184]: no such table: notifications_notification
+ERROR 2025-04-26 18:09:44,047 log Internal Server Error: /api/v1/notifications/list/
+ERROR 2025-04-26 18:09:44,048 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 500 114
+INFO 2025-04-26 18:10:15,447 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:10:15,468 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:10:15,481 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:10:15,527 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:10:15,543 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:10:15,567 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:10:15,585 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:10:15,599 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:10:15,610 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:10:15,626 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+ERROR 2025-04-26 18:10:15,635 exception_handlers Database error [ERR-1745671215]: no such table: notifications_notification
+ERROR 2025-04-26 18:10:15,637 log Internal Server Error: /api/v1/notifications/list/
+ERROR 2025-04-26 18:10:15,638 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 500 114
+ERROR 2025-04-26 18:10:15,654 exception_handlers Database error [ERR-1745671215]: no such table: notifications_notification
+ERROR 2025-04-26 18:10:15,656 log Internal Server Error: /api/v1/notifications/list/
+ERROR 2025-04-26 18:10:15,657 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 500 114
+INFO 2025-04-26 18:10:35,119 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:10:35,134 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:10:35,143 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:10:35,156 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:10:35,267 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:10:35,280 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:10:35,300 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:10:35,315 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:10:35,327 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:10:35,343 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+ERROR 2025-04-26 18:10:35,354 exception_handlers Database error [ERR-1745671235]: no such table: notifications_notification
+ERROR 2025-04-26 18:10:35,355 log Internal Server Error: /api/v1/notifications/list/
+ERROR 2025-04-26 18:10:35,355 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 500 114
+ERROR 2025-04-26 18:10:35,371 exception_handlers Database error [ERR-1745671235]: no such table: notifications_notification
+ERROR 2025-04-26 18:10:35,372 log Internal Server Error: /api/v1/notifications/list/
+ERROR 2025-04-26 18:10:35,373 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 500 114
+INFO 2025-04-26 18:10:45,790 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:10:45,800 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:10:45,806 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:10:45,829 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:10:45,858 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:10:45,876 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:10:45,964 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:10:45,972 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:10:45,996 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:10:46,019 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+ERROR 2025-04-26 18:10:46,030 exception_handlers Database error [ERR-1745671246]: no such table: notifications_notification
+ERROR 2025-04-26 18:10:46,032 log Internal Server Error: /api/v1/notifications/list/
+ERROR 2025-04-26 18:10:46,033 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 500 114
+ERROR 2025-04-26 18:10:46,046 exception_handlers Database error [ERR-1745671246]: no such table: notifications_notification
+ERROR 2025-04-26 18:10:46,048 log Internal Server Error: /api/v1/notifications/list/
+ERROR 2025-04-26 18:10:46,050 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 500 114
+INFO 2025-04-26 18:11:05,340 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:11:05,388 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:11:05,402 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:11:05,427 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:11:05,463 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:11:05,482 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:11:05,848 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:11:16,068 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 18:11:16,133 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:11:16,139 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:11:16,153 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:11:16,165 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+ERROR 2025-04-26 18:11:16,167 exception_handlers Database error [ERR-1745671276]: no such table: notifications_notification
+ERROR 2025-04-26 18:11:16,167 log Internal Server Error: /api/v1/notifications/list/
+ERROR 2025-04-26 18:11:16,168 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 500 114
+ERROR 2025-04-26 18:11:16,173 exception_handlers Database error [ERR-1745671276]: no such table: notifications_notification
+ERROR 2025-04-26 18:11:16,174 log Internal Server Error: /api/v1/notifications/list/
+ERROR 2025-04-26 18:11:16,174 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 500 114
+INFO 2025-04-26 18:13:33,130 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:13:33,143 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:13:33,151 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:13:33,164 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:13:33,176 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:13:33,193 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:13:33,311 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:13:33,326 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:13:33,340 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:13:33,356 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:13:33,366 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:13:33,380 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:13:33,627 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:13:51,450 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:13:51,463 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:13:59,824 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:13:59,835 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:13:59,844 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:13:59,885 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:13:59,905 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:13:59,933 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:14:00,339 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:14:08,066 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 18:14:08,167 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:14:08,176 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:14:08,202 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:14:08,216 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:14:08,222 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:14:08,232 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:14:12,365 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:14:12,374 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:14:12,380 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:14:12,390 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:14:12,393 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:14:12,400 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:14:14,988 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:14:14,999 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:14:15,013 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:18:57,734 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:18:57,745 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:18:57,751 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:18:57,763 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:18:57,767 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:18:57,775 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:19:52,893 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:19:52,901 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:19:52,915 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:19:52,919 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:19:52,940 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:19:52,961 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:19:53,007 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:19:53,015 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:19:53,023 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:19:53,032 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:19:53,035 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:19:53,041 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:19:53,371 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:19:54,138 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:19:54,160 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:19:54,175 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:19:54,188 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:19:54,221 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:19:54,245 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:19:54,253 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:19:54,263 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:19:54,267 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:19:54,276 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:19:54,279 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:19:54,284 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:19:54,626 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:19:54,943 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:19:54,963 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:19:54,978 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:19:54,995 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:19:55,008 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:19:55,030 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:19:55,050 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:19:55,057 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:19:55,062 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:19:55,072 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:19:55,074 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:19:55,081 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:19:55,439 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:03,371 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:03,422 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:20:03,455 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:20:03,479 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:03,496 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:20:03,501 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:03,537 basehttp - Broken pipe from ('127.0.0.1', 14348)
+INFO 2025-04-26 18:20:03,542 basehttp - Broken pipe from ('127.0.0.1', 3135)
+INFO 2025-04-26 18:20:03,543 basehttp - Broken pipe from ('127.0.0.1', 3134)
+INFO 2025-04-26 18:20:03,671 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:20:03,685 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:20:03,697 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:03,711 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:03,731 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:03,767 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:03,776 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:20:03,790 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:20:03,793 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:20:03,942 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:03,955 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:20:03,961 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:03,989 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:04,021 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:20:04,028 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:20:04,039 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:04,047 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:20:04,065 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:20:04,072 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:20:04,075 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:20:04,081 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:20:04,449 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:05,101 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:05,109 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:20:05,122 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:20:05,142 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:05,156 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:05,182 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:20:05,187 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:20:05,196 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 18:20:05,201 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:20:05,209 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:20:05,213 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:20:05,220 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:20:05,605 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:23:14,879 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:23:15,708 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:32:54,224 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:32:54,239 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:32:54,244 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:32:54,255 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:32:54,272 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:32:54,293 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:32:54,319 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1726
+INFO 2025-04-26 18:32:54,328 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1726
+INFO 2025-04-26 18:32:54,332 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:32:54,348 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:32:54,355 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:32:54,359 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:32:54,394 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:32:59,163 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:32:59,179 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:32:59,211 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:32:59,221 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:32:59,229 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:32:59,253 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:32:59,266 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1726
+INFO 2025-04-26 18:32:59,278 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1726
+INFO 2025-04-26 18:32:59,280 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:32:59,292 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:32:59,298 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:32:59,306 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:32:59,618 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:34:43,543 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:34:45,185 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:40:21,861 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1726
+INFO 2025-04-26 18:40:21,870 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:40:21,880 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:40:36,968 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:40:49,791 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:40:51,821 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1726
+INFO 2025-04-26 18:40:51,833 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:40:51,846 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:40:56,014 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1726
+INFO 2025-04-26 18:40:56,036 basehttp "OPTIONS /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 0
+INFO 2025-04-26 18:40:56,037 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1726
+WARNING 2025-04-26 18:40:56,057 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 18:40:56,058 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+WARNING 2025-04-26 18:40:56,072 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 18:40:56,073 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 18:41:04,842 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:41:04,849 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:41:08,535 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:41:08,545 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:41:08,565 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:41:08,574 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:41:08,587 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:41:08,634 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:41:08,649 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1726
+INFO 2025-04-26 18:41:08,664 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1726
+WARNING 2025-04-26 18:41:08,670 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 18:41:08,673 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+WARNING 2025-04-26 18:41:08,687 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 18:41:08,688 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 18:41:08,986 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:41:10,830 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1726
+INFO 2025-04-26 18:41:10,842 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1726
+INFO 2025-04-26 18:41:10,845 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:41:10,854 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:41:10,858 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:41:10,864 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+ERROR 2025-04-26 18:47:54,414 exception_handlers API Error [ERR-1745673474]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-26 18:47:54,415 log Unauthorized: /api/v1/transactions/list/
+WARNING 2025-04-26 18:47:54,416 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 401 261
+ERROR 2025-04-26 18:47:54,420 exception_handlers API Error [ERR-1745673474]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-26 18:47:54,420 log Unauthorized: /api/v1/transactions/list/
+WARNING 2025-04-26 18:47:54,420 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 401 261
+INFO 2025-04-26 18:48:05,343 basehttp "OPTIONS /api/v1/auth/login/ HTTP/1.1" 200 0
+INFO 2025-04-26 18:48:05,426 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 18:48:05,483 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1726
+INFO 2025-04-26 18:48:05,493 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1726
+INFO 2025-04-26 18:48:05,503 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:48:05,511 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 18:48:05,514 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:48:05,520 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 18:48:06,656 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:48:06,664 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:48:29,725 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:48:29,780 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:48:29,795 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:48:29,822 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:48:29,850 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:48:29,876 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:48:29,912 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:48:29,923 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:48:43,483 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:48:43,500 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:48:43,514 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:48:43,541 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:48:43,583 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:48:43,597 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:48:43,690 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:48:43,698 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:52:52,866 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 18:52:56,627 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:52:56,627 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:52:56,635 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:52:56,658 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:52:56,674 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:52:56,692 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:52:56,746 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:52:56,763 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:52:56,781 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:53:03,296 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:53:03,307 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:53:03,317 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:53:03,356 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:53:03,382 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:53:03,408 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:53:03,474 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:53:03,487 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:54:30,341 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:54:30,357 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:54:30,377 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:54:30,392 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:54:30,406 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:54:30,437 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:54:30,571 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:54:30,583 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:55:11,264 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:55:11,283 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:55:11,293 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:55:11,320 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:55:11,342 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:55:11,370 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 18:55:11,496 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:55:11,508 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 18:55:11,736 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 18:56:05,527 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+ERROR 2025-04-26 19:31:19,695 exception_handlers API Error [ERR-1745676079]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+ERROR 2025-04-26 19:31:19,696 exception_handlers API Error [ERR-1745676079]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-26 19:31:19,697 log Unauthorized: /api/v1/auth/profile/
+WARNING 2025-04-26 19:31:19,698 log Unauthorized: /api/v1/accounts/preferences/
+WARNING 2025-04-26 19:31:19,698 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 401 261
+WARNING 2025-04-26 19:31:19,700 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 401 261
+ERROR 2025-04-26 19:31:19,705 exception_handlers API Error [ERR-1745676079]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-26 19:31:19,706 log Unauthorized: /api/v1/accounts/preferences/
+WARNING 2025-04-26 19:31:19,707 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 401 261
+ERROR 2025-04-26 19:31:19,713 exception_handlers API Error [ERR-1745676079]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-26 19:31:19,713 log Unauthorized: /api/v1/auth/profile/
+WARNING 2025-04-26 19:31:19,714 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 401 261
+ERROR 2025-04-26 19:31:19,725 exception_handlers API Error [ERR-1745676079]: Authentication credentials were not provided.
+WARNING 2025-04-26 19:31:19,726 log Unauthorized: /api/v1/auth/logout/
+WARNING 2025-04-26 19:31:19,727 basehttp "POST /api/v1/auth/logout/ HTTP/1.1" 401 140
+ERROR 2025-04-26 19:31:19,739 exception_handlers API Error [ERR-1745676079]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-26 19:31:19,739 log Unauthorized: /api/v1/accounts/preferences/
+WARNING 2025-04-26 19:31:19,739 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 401 261
+ERROR 2025-04-26 19:31:19,745 exception_handlers API Error [ERR-1745676079]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-26 19:31:19,745 log Unauthorized: /api/v1/accounts/preferences/
+WARNING 2025-04-26 19:31:19,746 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 401 261
+ERROR 2025-04-26 19:31:19,776 exception_handlers API Error [ERR-1745676079]: Authentication credentials were not provided.
+WARNING 2025-04-26 19:31:19,777 log Unauthorized: /api/v1/auth/logout/
+WARNING 2025-04-26 19:31:19,777 basehttp "POST /api/v1/auth/logout/ HTTP/1.1" 401 140
+ERROR 2025-04-26 19:31:19,789 exception_handlers API Error [ERR-1745676079]: Authentication credentials were not provided.
+WARNING 2025-04-26 19:31:19,790 log Unauthorized: /api/v1/transactions/list/
+WARNING 2025-04-26 19:31:19,790 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 401 140
+ERROR 2025-04-26 19:31:19,793 exception_handlers API Error [ERR-1745676079]: Authentication credentials were not provided.
+WARNING 2025-04-26 19:31:19,793 log Unauthorized: /api/v1/transactions/list/
+WARNING 2025-04-26 19:31:19,794 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 401 140
+INFO 2025-04-26 19:31:29,017 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 19:31:29,084 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:31:29,093 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:31:29,120 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:31:29,139 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:31:29,150 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:31:29,182 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:31:30,677 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 19:31:30,700 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 19:31:42,191 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:31:42,201 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:31:42,220 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:31:42,240 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:31:42,249 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:31:42,273 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:31:46,132 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 19:31:46,150 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 19:31:47,401 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:31:47,413 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:31:47,429 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:31:47,455 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:31:47,461 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:31:47,488 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:33:09,355 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:33:09,383 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:33:09,393 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:33:46,695 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:33:46,728 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:33:46,738 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:33:48,398 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 19:33:48,433 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 19:34:12,246 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:34:12,259 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:34:12,280 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:34:12,296 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:34:12,309 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:34:12,379 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:34:14,006 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 19:34:14,026 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 19:34:28,723 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:34:28,733 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:34:28,752 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:34:28,761 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:34:28,797 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:34:28,870 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:37:19,644 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:37:19,685 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:37:19,693 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:37:52,617 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:37:52,649 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:37:52,658 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:38:30,120 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:38:30,133 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:38:30,152 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:38:30,166 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:38:30,176 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:38:30,250 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:38:31,294 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 19:38:31,321 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 19:38:34,968 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:38:35,066 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 19:38:35,087 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:38:35,088 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+WARNING 2025-04-26 19:38:35,097 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:38:35,098 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 19:40:05,692 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 19:40:05,709 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:40:05,710 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 19:40:43,089 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 19:40:43,106 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:40:43,107 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 19:41:18,290 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 19:41:18,322 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:41:18,322 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 19:42:13,157 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 19:42:13,171 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:42:13,172 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 19:42:49,829 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 19:42:49,848 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:42:49,849 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 19:43:56,363 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 19:43:56,381 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:43:56,382 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 19:44:19,692 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 19:44:19,713 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:44:19,713 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 19:44:45,105 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 19:44:45,119 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:44:45,120 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 19:45:04,036 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 19:45:04,045 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 19:45:04,062 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 19:45:04,082 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 19:45:04,091 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 19:45:04,108 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 19:45:04,535 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 19:45:06,342 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:45:06,349 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:45:06,373 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:45:06,387 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:45:06,395 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 19:45:06,486 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 19:45:08,086 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:45:08,096 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 19:45:08,102 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:45:08,103 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+WARNING 2025-04-26 19:45:08,112 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:45:08,112 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 19:46:04,718 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 19:46:05,624 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 19:46:06,212 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 19:46:07,247 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 19:49:10,828 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 19:49:10,848 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:49:10,849 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 19:50:05,253 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 19:50:05,268 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 19:50:05,288 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 19:50:05,305 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 19:50:05,344 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 19:50:05,358 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 19:50:05,608 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 19:50:05,620 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 19:50:05,643 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:50:05,645 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+WARNING 2025-04-26 19:50:05,656 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:50:05,656 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 19:50:06,684 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 19:50:40,718 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 19:50:40,733 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:50:40,733 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 19:52:00,807 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 19:52:00,825 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 19:52:00,826 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 20:55:11,986 basehttp "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-04-26 20:55:11,987 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+INFO 2025-04-26 20:55:11,988 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+INFO 2025-04-26 20:55:11,989 basehttp "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-04-26 20:55:11,989 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+INFO 2025-04-26 20:55:11,993 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+ERROR 2025-04-26 20:55:12,022 exception_handlers API Error [ERR-1745681112]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-26 20:55:12,022 log Unauthorized: /api/v1/accounts/preferences/
+WARNING 2025-04-26 20:55:12,023 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 401 261
+ERROR 2025-04-26 20:55:12,033 exception_handlers API Error [ERR-1745681112]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-26 20:55:12,033 log Unauthorized: /api/v1/auth/profile/
+WARNING 2025-04-26 20:55:12,034 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 401 261
+ERROR 2025-04-26 20:55:12,047 exception_handlers API Error [ERR-1745681112]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-26 20:55:12,047 log Unauthorized: /api/v1/auth/profile/
+WARNING 2025-04-26 20:55:12,048 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 401 261
+ERROR 2025-04-26 20:55:12,064 exception_handlers API Error [ERR-1745681112]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+ERROR 2025-04-26 20:55:12,064 exception_handlers API Error [ERR-1745681112]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-26 20:55:12,064 log Unauthorized: /api/v1/accounts/preferences/
+WARNING 2025-04-26 20:55:12,065 log Unauthorized: /api/v1/accounts/preferences/
+WARNING 2025-04-26 20:55:12,066 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 401 261
+WARNING 2025-04-26 20:55:12,066 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 401 261
+ERROR 2025-04-26 20:55:12,076 exception_handlers API Error [ERR-1745681112]: Authentication credentials were not provided.
+WARNING 2025-04-26 20:55:12,076 log Unauthorized: /api/v1/auth/logout/
+WARNING 2025-04-26 20:55:12,077 basehttp "POST /api/v1/auth/logout/ HTTP/1.1" 401 140
+ERROR 2025-04-26 20:55:12,091 exception_handlers API Error [ERR-1745681112]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-26 20:55:12,091 log Unauthorized: /api/v1/accounts/preferences/
+WARNING 2025-04-26 20:55:12,091 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 401 261
+ERROR 2025-04-26 20:55:12,110 exception_handlers API Error [ERR-1745681112]: Authentication credentials were not provided.
+WARNING 2025-04-26 20:55:12,110 log Unauthorized: /api/v1/auth/logout/
+WARNING 2025-04-26 20:55:12,113 basehttp "POST /api/v1/auth/logout/ HTTP/1.1" 401 140
+ERROR 2025-04-26 20:55:12,113 exception_handlers API Error [ERR-1745681112]: Authentication credentials were not provided.
+WARNING 2025-04-26 20:55:12,113 log Unauthorized: /api/v1/accounts/bank-accounts/
+WARNING 2025-04-26 20:55:12,114 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 401 140
+ERROR 2025-04-26 20:55:12,118 exception_handlers API Error [ERR-1745681112]: Authentication credentials were not provided.
+WARNING 2025-04-26 20:55:12,119 log Unauthorized: /api/v1/accounts/bank-accounts/
+WARNING 2025-04-26 20:55:12,119 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 401 140
+INFO 2025-04-26 20:55:22,545 basehttp "OPTIONS /api/v1/auth/login/ HTTP/1.1" 200 0
+INFO 2025-04-26 20:55:22,676 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 20:55:22,726 basehttp "OPTIONS /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 0
+INFO 2025-04-26 20:55:22,727 basehttp "OPTIONS /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 0
+INFO 2025-04-26 20:55:22,742 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 20:55:22,749 basehttp "OPTIONS /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 0
+INFO 2025-04-26 20:55:22,755 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 20:55:22,777 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 20:55:22,783 basehttp "OPTIONS /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 0
+INFO 2025-04-26 20:55:22,800 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 20:55:22,805 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 20:55:22,901 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 20:55:24,352 basehttp "OPTIONS /api/v1/transactions/list/ HTTP/1.1" 200 0
+INFO 2025-04-26 20:55:24,352 basehttp "OPTIONS /api/v1/transactions/list/ HTTP/1.1" 200 0
+INFO 2025-04-26 20:55:24,371 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 20:55:24,393 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 20:55:25,206 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 20:55:25,210 basehttp "OPTIONS /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 0
+INFO 2025-04-26 20:55:25,215 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 20:55:25,225 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 20:55:25,226 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+WARNING 2025-04-26 20:55:25,232 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 20:55:25,233 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+WARNING 2025-04-26 20:55:32,099 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 20:55:32,100 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+WARNING 2025-04-26 20:55:32,112 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 20:55:32,113 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 20:55:46,806 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 20:55:46,815 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 20:55:46,821 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 20:55:46,821 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+WARNING 2025-04-26 20:55:46,829 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 20:55:46,829 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 20:55:59,708 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 20:55:59,739 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 20:55:59,749 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 20:55:59,784 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 20:55:59,809 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 20:55:59,841 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 20:55:59,937 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 20:55:59,968 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 20:55:59,994 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 20:55:59,995 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+WARNING 2025-04-26 20:56:00,021 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 20:56:00,022 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 20:56:00,180 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+WARNING 2025-04-26 20:56:10,064 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 20:56:10,066 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+WARNING 2025-04-26 20:56:10,077 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 20:56:10,077 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 20:56:15,890 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 20:56:15,903 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 20:56:15,918 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 20:56:15,945 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 20:56:15,981 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 20:56:16,008 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+WARNING 2025-04-26 20:56:16,062 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 20:56:16,063 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+WARNING 2025-04-26 20:56:16,072 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 20:56:16,073 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 5425
+INFO 2025-04-26 20:56:16,271 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 20:57:44,578 autoreload D:\l_me\sec\backend\banking_api\transactions\models.py changed, reloading.
+INFO 2025-04-26 20:57:45,710 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 20:58:46,348 autoreload D:\l_me\sec\backend\banking_api\transactions\serializers.py changed, reloading.
+INFO 2025-04-26 20:58:47,241 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 20:59:49,821 autoreload D:\l_me\sec\backend\banking_api\transactions\views.py changed, reloading.
+INFO 2025-04-26 20:59:50,638 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 21:00:23,922 autoreload D:\l_me\sec\backend\banking_api\transactions\urls.py changed, reloading.
+INFO 2025-04-26 21:00:24,732 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 21:08:25,275 autoreload D:\l_me\sec\backend\banking_api\transactions\urls.py changed, reloading.
+INFO 2025-04-26 21:08:26,302 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 21:18:29,706 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 21:18:29,707 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:18:29,715 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 21:18:29,726 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 21:18:29,761 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 21:18:29,789 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:18:29,804 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 2
+INFO 2025-04-26 21:18:29,817 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 2
+INFO 2025-04-26 21:18:29,836 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 21:18:37,607 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 21:18:37,629 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 21:18:38,655 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:18:38,669 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:18:38,675 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 2
+INFO 2025-04-26 21:18:38,689 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 2
+INFO 2025-04-26 21:18:44,682 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 2
+INFO 2025-04-26 21:18:44,696 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 2
+INFO 2025-04-26 21:19:14,048 basehttp "POST /api/v1/transactions/beneficiaries/ HTTP/1.1" 201 245
+INFO 2025-04-26 21:19:14,062 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:19:25,702 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:19:25,712 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:19:25,724 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:19:25,739 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:19:44,851 basehttp "OPTIONS /api/v1/transactions/transfer/ HTTP/1.1" 200 0
+WARNING 2025-04-26 21:19:44,857 log Bad Request: /api/v1/transactions/transfer/
+WARNING 2025-04-26 21:19:44,858 basehttp "POST /api/v1/transactions/transfer/ HTTP/1.1" 400 91
+WARNING 2025-04-26 21:20:03,011 log Bad Request: /api/v1/transactions/transfer/
+WARNING 2025-04-26 21:20:03,012 basehttp "POST /api/v1/transactions/transfer/ HTTP/1.1" 400 91
+INFO 2025-04-26 21:22:14,377 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:22:14,400 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:22:58,381 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:22:58,402 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:24:34,825 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:24:34,834 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 21:24:34,857 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:24:34,899 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 21:24:34,914 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 21:24:34,940 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 21:24:35,033 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:24:35,047 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:24:35,073 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:24:35,097 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:24:35,292 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+WARNING 2025-04-26 21:24:48,204 log Bad Request: /api/v1/transactions/transfer/
+WARNING 2025-04-26 21:24:48,204 basehttp "POST /api/v1/transactions/transfer/ HTTP/1.1" 400 59
+WARNING 2025-04-26 21:24:53,821 log Bad Request: /api/v1/transactions/transfer/
+WARNING 2025-04-26 21:24:53,827 basehttp "POST /api/v1/transactions/transfer/ HTTP/1.1" 400 59
+WARNING 2025-04-26 21:25:00,130 log Bad Request: /api/v1/transactions/transfer/
+WARNING 2025-04-26 21:25:00,130 basehttp "POST /api/v1/transactions/transfer/ HTTP/1.1" 400 59
+ERROR 2025-04-26 21:27:18,590 exception_handlers API Error [ERR-1745683038]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-26 21:27:18,591 log Unauthorized: /api/v1/accounts/bank-accounts/
+WARNING 2025-04-26 21:27:18,592 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 401 261
+INFO 2025-04-26 21:29:36,152 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 21:29:36,243 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:29:36,254 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:29:36,308 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 21:29:36,341 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10541
+INFO 2025-04-26 21:29:36,352 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 410
+INFO 2025-04-26 21:29:36,363 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 410
+INFO 2025-04-26 21:29:47,464 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 21:29:47,487 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10533
+INFO 2025-04-26 21:29:48,548 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:29:48,560 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:29:48,579 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:29:48,595 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:30:06,720 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:30:06,729 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:30:06,742 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:30:06,758 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:30:17,533 basehttp "POST /api/v1/transactions/transfer/ HTTP/1.1" 201 488
+INFO 2025-04-26 21:30:21,051 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:30:21,070 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 21:30:22,557 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 21:30:22,578 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 21:30:51,801 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 21:30:51,821 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 21:32:04,542 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:32:04,554 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 21:32:04,580 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 21:32:04,606 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 21:32:04,621 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 21:32:04,738 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+ERROR 2025-04-26 22:36:03,232 exception_handlers API Error [ERR-1745687163]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-26 22:36:03,236 log Unauthorized: /api/v1/accounts/preferences/
+WARNING 2025-04-26 22:36:03,237 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 401 261
+INFO 2025-04-26 22:36:16,966 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 22:36:17,047 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:36:17,055 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:36:17,081 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:36:17,101 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:36:17,117 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:36:17,230 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:37:30,537 basehttp "OPTIONS /api/v1/auth/logout/ HTTP/1.1" 200 0
+WARNING 2025-04-26 22:37:30,586 log Bad Request: /api/v1/auth/logout/
+WARNING 2025-04-26 22:37:30,587 basehttp "POST /api/v1/auth/logout/ HTTP/1.1" 400 38
+INFO 2025-04-26 22:38:37,092 basehttp "OPTIONS /api/v1/auth/register/ HTTP/1.1" 200 0
+INFO 2025-04-26 22:38:37,259 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 201 201
+INFO 2025-04-26 22:39:48,827 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 201 216
+INFO 2025-04-26 22:43:16,380 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 22:43:16,481 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:43:16,507 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:43:16,544 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:43:16,579 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:43:16,590 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:43:16,598 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:43:39,291 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:43:39,306 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:43:39,333 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:43:39,352 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:43:39,366 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:43:39,493 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:43:41,558 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:43:41,579 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:43:41,623 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 22:43:41,790 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 22:43:42,092 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 22:43:42,126 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 22:44:01,922 basehttp "OPTIONS /api/v1/transactions/51/ HTTP/1.1" 200 0
+INFO 2025-04-26 22:44:01,969 basehttp "GET /api/v1/transactions/51/ HTTP/1.1" 200 488
+INFO 2025-04-26 22:44:04,004 basehttp "GET /api/v1/transactions/51/ HTTP/1.1" 200 488
+INFO 2025-04-26 22:44:07,811 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:44:07,823 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:44:07,869 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 22:44:07,882 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 22:44:11,597 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 22:44:11,620 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 22:45:41,203 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 22:45:41,210 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:45:41,238 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 22:45:41,262 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:45:41,278 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:45:41,303 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:45:41,382 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 22:45:41,438 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 22:45:41,713 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:45:44,528 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:45:44,542 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:45:44,574 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:45:44,611 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:45:44,625 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:45:44,818 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:46:05,069 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:46:05,080 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 22:46:05,087 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:46:05,116 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 22:46:05,139 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:46:05,164 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:46:05,249 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:46:05,270 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:46:05,332 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:46:05,360 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:46:05,387 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:46:05,589 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:46:05,598 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:46:07,672 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:46:07,684 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 22:46:07,712 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:46:07,718 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:46:07,743 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:46:07,760 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 22:46:07,853 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:46:07,873 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:46:07,902 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:46:07,923 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:46:07,952 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:46:08,090 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:46:08,345 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:46:08,980 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 22:46:08,988 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:46:09,021 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 22:46:09,061 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:46:09,076 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:46:09,100 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:46:09,163 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:46:09,180 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:46:09,210 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:46:09,233 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:46:09,249 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:46:09,365 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:46:09,501 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 22:46:41,675 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 22:46:41,715 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 22:46:44,223 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:46:44,242 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:46:44,278 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:46:44,305 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:46:44,321 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 22:46:44,424 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 22:46:52,250 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 22:46:52,276 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 22:46:53,446 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:46:53,456 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 22:46:53,467 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 22:46:53,479 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+WARNING 2025-04-26 22:47:05,089 log Bad Request: /api/v1/auth/logout/
+WARNING 2025-04-26 22:47:05,089 basehttp "POST /api/v1/auth/logout/ HTTP/1.1" 400 38
+INFO 2025-04-26 23:12:13,378 basehttp "OPTIONS /api/v1/auth/login/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:12:13,545 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 23:12:13,592 basehttp "OPTIONS /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:12:13,594 basehttp "OPTIONS /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:12:13,613 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:12:13,619 basehttp "OPTIONS /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 0
+INFO 2025-04-26 23:12:13,624 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:12:13,650 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 23:12:13,655 basehttp "OPTIONS /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 0
+INFO 2025-04-26 23:12:13,672 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:12:13,687 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 23:12:13,796 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+WARNING 2025-04-26 23:12:20,649 log Bad Request: /api/v1/auth/logout/
+WARNING 2025-04-26 23:12:20,650 basehttp "POST /api/v1/auth/logout/ HTTP/1.1" 400 38
+WARNING 2025-04-26 23:13:00,762 log Bad Request: /api/v1/auth/register/
+WARNING 2025-04-26 23:13:00,762 basehttp "POST /api/v1/auth/register/ HTTP/1.1" 400 112
+INFO 2025-04-26 23:13:18,459 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 702
+INFO 2025-04-26 23:13:18,528 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 23:13:18,536 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 23:13:18,548 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 23:13:18,561 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 23:13:18,568 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 23:13:18,575 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 23:14:12,100 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 23:14:12,108 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 23:14:12,116 basehttp "OPTIONS /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:14:12,119 basehttp "OPTIONS /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:14:12,176 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 2
+INFO 2025-04-26 23:14:12,190 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 2
+INFO 2025-04-26 23:14:12,493 basehttp "OPTIONS /api/v1/transactions/list/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:14:12,494 basehttp "OPTIONS /api/v1/transactions/list/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:14:12,503 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 23:14:12,514 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 23:14:13,012 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 23:14:13,021 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 23:14:13,027 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 23:14:13,040 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 23:14:13,042 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 23:14:13,048 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 23:14:39,680 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 23:14:39,692 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 52
+INFO 2025-04-26 23:14:40,442 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 23:14:40,450 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 23:14:40,456 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 23:14:40,468 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 23:14:40,476 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 23:14:40,483 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 23:19:39,251 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 23:19:39,260 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 2
+INFO 2025-04-26 23:19:39,263 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 23:19:39,273 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 52
+INFO 2025-04-26 23:19:39,281 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+INFO 2025-04-26 23:19:39,319 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 2
+WARNING 2025-04-26 23:19:48,640 log Bad Request: /api/v1/auth/logout/
+WARNING 2025-04-26 23:19:48,641 basehttp "POST /api/v1/auth/logout/ HTTP/1.1" 400 38
+INFO 2025-04-26 23:20:04,273 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 23:20:04,367 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:20:04,382 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:20:04,415 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 23:20:04,456 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 23:20:04,458 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:20:04,467 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:22:31,298 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:22:31,309 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:22:31,361 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 23:22:31,380 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:22:31,402 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 23:22:31,610 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:23:04,288 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:23:04,299 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:23:04,338 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 23:23:04,359 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:23:04,385 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 23:23:04,588 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:25:27,854 basehttp "OPTIONS /api/v1/notifications/list/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:25:27,857 basehttp "OPTIONS /api/v1/notifications/list/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:25:27,872 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:25:27,883 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:25:27,897 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:25:27,910 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:25:27,950 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 23:25:27,987 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:25:28,020 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 23:25:28,065 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:25:47,268 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 23:25:47,297 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 23:25:48,194 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:25:48,211 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:25:48,235 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 23:25:48,257 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 23:26:04,643 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:26:04,662 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:26:04,681 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 23:26:04,702 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 23:26:05,580 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 23:26:05,628 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 23:26:14,621 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:26:14,632 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:26:14,655 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 23:26:14,680 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 23:26:15,865 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 23:26:15,897 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 23:26:18,371 basehttp "GET /api/v1/transactions/51/ HTTP/1.1" 200 488
+INFO 2025-04-26 23:26:27,770 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:26:32,588 basehttp "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:26:32,588 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:26:32,595 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:26:32,599 basehttp "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:26:32,604 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:26:32,610 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:26:32,610 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:26:32,628 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 23:26:32,645 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 23:26:32,665 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:26:32,683 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 23:26:32,720 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 23:26:32,727 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 23:26:32,751 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 23:26:32,823 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 23:26:32,856 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 23:26:33,080 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 23:27:32,500 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:28:16,109 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:28:16,122 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 23:28:16,157 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 23:28:20,488 basehttp "OPTIONS /api/v1/transactions/export/?format=csv HTTP/1.1" 200 0
+WARNING 2025-04-26 23:28:20,870 log Not Found: /api/v1/transactions/export/
+WARNING 2025-04-26 23:28:20,871 basehttp "GET /api/v1/transactions/export/?format=csv HTTP/1.1" 404 5938
+WARNING 2025-04-26 23:28:38,051 log Not Found: /api/v1/transactions/export/
+WARNING 2025-04-26 23:28:38,052 basehttp "GET /api/v1/transactions/export/?format=csv HTTP/1.1" 404 5938
+WARNING 2025-04-26 23:28:41,973 log Not Found: /api/v1/transactions/export/
+WARNING 2025-04-26 23:28:41,974 basehttp "GET /api/v1/transactions/export/?format=csv HTTP/1.1" 404 5938
+INFO 2025-04-26 23:28:50,628 basehttp "OPTIONS /api/v1/transactions/50/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:28:50,647 basehttp "GET /api/v1/transactions/50/ HTTP/1.1" 200 513
+INFO 2025-04-26 23:29:16,028 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:30:15,962 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:31:15,910 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:31:29,770 autoreload D:\l_me\sec\backend\banking_api\transactions\views.py changed, reloading.
+INFO 2025-04-26 23:31:31,294 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 23:35:15,171 autoreload D:\l_me\sec\backend\banking_api\transactions\views.py changed, reloading.
+INFO 2025-04-26 23:35:16,020 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 23:35:59,647 autoreload D:\l_me\sec\backend\banking_api\transactions\views.py changed, reloading.
+INFO 2025-04-26 23:36:00,725 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 23:38:12,210 autoreload D:\l_me\sec\backend\banking_api\transactions\views.py changed, reloading.
+INFO 2025-04-26 23:38:13,290 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 23:40:57,188 autoreload D:\l_me\sec\backend\banking_api\transactions\views.py changed, reloading.
+INFO 2025-04-26 23:40:58,397 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 23:42:20,526 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-26 23:42:25,116 exception_handlers API Error [ERR-1745691145]: Authentication credentials were not provided.
+WARNING 2025-04-26 23:42:25,117 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-26 23:42:25,118 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-26 23:42:25,121 exception_handlers API Error [ERR-1745691145]: Authentication credentials were not provided.
+WARNING 2025-04-26 23:42:25,122 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-26 23:42:25,122 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+INFO 2025-04-26 23:42:37,267 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 23:42:37,371 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:42:37,380 basehttp "OPTIONS /api/v1/transactions/?limit=5 HTTP/1.1" 200 0
+INFO 2025-04-26 23:42:37,387 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:42:37,425 basehttp "GET /api/v1/transactions/?limit=5 HTTP/1.1" 200 10504
+INFO 2025-04-26 23:42:37,450 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:42:37,475 basehttp "GET /api/v1/transactions/?limit=5 HTTP/1.1" 200 10504
+INFO 2025-04-26 23:42:37,608 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:42:39,277 basehttp "OPTIONS /api/v1/transactions/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:42:39,277 basehttp "OPTIONS /api/v1/transactions/ HTTP/1.1" 200 0
+INFO 2025-04-26 23:42:39,299 basehttp "GET /api/v1/transactions/ HTTP/1.1" 200 10496
+INFO 2025-04-26 23:42:39,339 basehttp "GET /api/v1/transactions/ HTTP/1.1" 200 10496
+INFO 2025-04-26 23:42:43,643 basehttp "GET /api/v1/transactions/51/ HTTP/1.1" 200 488
+ERROR 2025-04-26 23:42:53,051 exception_handlers API Error [ERR-1745691173]: 
+WARNING 2025-04-26 23:42:53,052 log Not Found: /api/v1/transactions/export/
+WARNING 2025-04-26 23:42:53,052 basehttp "GET /api/v1/transactions/export/?format=csv HTTP/1.1" 404 96
+INFO 2025-04-26 23:43:24,693 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:44:23,118 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:44:23,135 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 23:44:23,148 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 23:44:23,148 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 4395
+WARNING 2025-04-26 23:44:23,161 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 23:44:23,162 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 4395
+INFO 2025-04-26 23:44:24,625 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:44:29,962 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:44:29,979 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:44:30,012 basehttp "GET /api/v1/transactions/?limit=5 HTTP/1.1" 200 10504
+INFO 2025-04-26 23:44:30,064 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:44:30,071 basehttp "GET /api/v1/transactions/?limit=5 HTTP/1.1" 200 10504
+INFO 2025-04-26 23:44:30,215 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:44:35,016 basehttp "GET /api/v1/transactions/ HTTP/1.1" 200 10496
+INFO 2025-04-26 23:44:35,059 basehttp "GET /api/v1/transactions/ HTTP/1.1" 200 10496
+INFO 2025-04-26 23:44:35,401 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:44:35,422 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 23:44:35,437 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 23:44:35,438 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 4395
+WARNING 2025-04-26 23:44:35,453 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 23:44:35,455 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 4395
+INFO 2025-04-26 23:44:43,303 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:44:43,327 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:44:43,362 basehttp "GET /api/v1/transactions/?limit=5 HTTP/1.1" 200 10504
+INFO 2025-04-26 23:44:43,391 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:44:43,408 basehttp "GET /api/v1/transactions/?limit=5 HTTP/1.1" 200 10504
+INFO 2025-04-26 23:44:43,528 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:44:45,061 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:44:45,081 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 23:44:45,088 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 23:44:45,089 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 4395
+WARNING 2025-04-26 23:44:45,104 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 23:44:45,105 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 4395
+WARNING 2025-04-26 23:44:47,915 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 23:44:47,916 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 4395
+WARNING 2025-04-26 23:44:47,932 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 23:44:47,933 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 4395
+INFO 2025-04-26 23:45:24,571 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:46:24,515 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:47:24,456 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:48:24,399 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:49:24,339 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:50:24,288 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:51:25,228 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:51:45,110 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:51:45,166 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 23:51:45,176 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 23:51:45,184 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:51:45,197 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-26 23:51:45,216 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 23:51:45,224 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 23:51:45,243 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+WARNING 2025-04-26 23:51:45,269 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 23:51:45,269 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 4395
+WARNING 2025-04-26 23:51:45,279 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 23:51:45,279 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 4395
+INFO 2025-04-26 23:51:45,596 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-26 23:51:45,944 basehttp "GET /api/v1/transactions/ HTTP/1.1" 200 10496
+INFO 2025-04-26 23:51:45,964 basehttp "GET /api/v1/transactions/ HTTP/1.1" 200 10496
+INFO 2025-04-26 23:51:48,002 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:51:48,012 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 23:51:48,018 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 23:51:48,019 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 4395
+WARNING 2025-04-26 23:51:48,032 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 23:51:48,033 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 4395
+INFO 2025-04-26 23:51:55,066 basehttp "GET /api/v1/transactions/ HTTP/1.1" 200 10496
+INFO 2025-04-26 23:51:55,098 basehttp "GET /api/v1/transactions/ HTTP/1.1" 200 10496
+ERROR 2025-04-26 23:51:57,772 exception_handlers API Error [ERR-1745691717]: 
+WARNING 2025-04-26 23:51:57,773 log Not Found: /api/v1/transactions/export/
+WARNING 2025-04-26 23:51:57,773 basehttp "GET /api/v1/transactions/export/?format=csv HTTP/1.1" 404 96
+INFO 2025-04-26 23:52:02,552 basehttp "GET /api/v1/transactions/51/ HTTP/1.1" 200 488
+INFO 2025-04-26 23:52:45,040 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:53:44,965 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:54:44,905 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:55:29,332 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:55:29,341 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+WARNING 2025-04-26 23:55:29,354 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 23:55:29,355 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 4395
+WARNING 2025-04-26 23:55:29,369 log Not Found: /api/v1/transactions/beneficiaries/
+WARNING 2025-04-26 23:55:29,370 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 404 4395
+INFO 2025-04-26 23:55:44,840 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:55:55,033 autoreload D:\l_me\sec\backend\banking_api\transactions\urls.py changed, reloading.
+INFO 2025-04-26 23:55:55,957 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 23:55:58,678 autoreload D:\l_me\sec\backend\banking_api\transactions\views.py changed, reloading.
+INFO 2025-04-26 23:55:59,899 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 23:56:40,693 autoreload D:\l_me\sec\backend\banking_api\transactions\views.py changed, reloading.
+INFO 2025-04-26 23:56:41,928 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 23:56:43,641 autoreload D:\l_me\sec\backend\banking_api\transactions\views.py changed, reloading.
+INFO 2025-04-26 23:56:44,699 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 23:56:49,530 autoreload D:\l_me\sec\backend\banking_api\transactions\views.py changed, reloading.
+INFO 2025-04-26 23:56:50,275 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 23:56:51,846 autoreload D:\l_me\sec\backend\banking_api\transactions\views.py changed, reloading.
+INFO 2025-04-26 23:56:52,683 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 23:57:14,335 autoreload D:\l_me\sec\backend\banking_api\transactions\urls.py changed, reloading.
+INFO 2025-04-26 23:57:15,115 autoreload Watching for file changes with StatReloader
+INFO 2025-04-26 23:57:20,226 autoreload D:\l_me\sec\backend\banking_api\transactions\views.py changed, reloading.
+INFO 2025-04-26 23:57:21,196 autoreload Watching for file changes with StatReloader
+ERROR 2025-04-26 23:57:29,145 exception_handlers API Error [ERR-1745692049]: Authentication credentials were not provided.
+WARNING 2025-04-26 23:57:29,146 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-26 23:57:29,147 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-26 23:57:29,151 exception_handlers API Error [ERR-1745692049]: Authentication credentials were not provided.
+WARNING 2025-04-26 23:57:29,151 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-26 23:57:29,152 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-26 23:57:29,618 exception_handlers API Error [ERR-1745692049]: Authentication credentials were not provided.
+WARNING 2025-04-26 23:57:29,618 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-26 23:57:29,619 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-26 23:57:29,624 exception_handlers API Error [ERR-1745692049]: Authentication credentials were not provided.
+WARNING 2025-04-26 23:57:29,624 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-26 23:57:29,625 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+INFO 2025-04-26 23:57:38,543 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-26 23:57:38,613 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:57:38,621 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:57:38,666 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 23:57:38,692 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:57:38,709 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-26 23:57:38,832 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-26 23:57:39,714 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 23:57:39,736 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-26 23:57:40,369 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:57:40,381 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-26 23:57:40,396 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 23:57:40,418 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-26 23:58:29,585 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-26 23:59:29,519 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:00:29,452 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:01:29,387 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:02:29,320 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:03:29,271 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:04:29,207 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:05:29,141 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:06:29,059 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:07:29,988 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:08:30,899 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:09:32,834 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:10:32,765 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:11:32,701 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:12:32,637 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:13:32,589 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:14:32,529 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:15:32,458 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:16:17,130 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 00:16:17,137 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 00:16:17,177 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-27 00:16:17,208 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-27 00:16:17,217 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-27 00:16:17,229 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-27 00:16:17,514 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-27 00:16:17,553 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-27 00:16:17,866 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 00:16:17,874 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 00:16:17,894 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-27 00:16:17,916 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-27 00:16:29,432 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:17:07,220 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 00:17:07,232 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 00:17:07,258 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-27 00:17:07,283 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-27 00:17:07,296 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-27 00:17:07,401 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-27 00:17:10,782 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-27 00:17:10,800 basehttp "GET /api/v1/transactions/list/ HTTP/1.1" 200 10501
+INFO 2025-04-27 00:17:13,093 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 00:17:13,101 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 00:17:13,116 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-27 00:17:13,135 basehttp "GET /api/v1/transactions/beneficiaries/ HTTP/1.1" 200 247
+INFO 2025-04-27 00:17:19,851 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 00:17:19,865 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 00:17:19,895 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-27 00:17:19,921 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-27 00:17:19,948 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-27 00:17:20,046 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-27 00:17:29,363 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:18:30,295 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:19:32,211 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:20:32,142 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847

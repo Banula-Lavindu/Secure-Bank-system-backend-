@@ -1,0 +1,36 @@
+# Django and DRF
+Django==4.2.10
+djangorestframework==3.14.0
+django-cors-headers==4.3.1
+django-environ==0.11.2
+
+# Authentication
+djangorestframework-simplejwt==5.3.1
+django-otp==1.2.2
+qrcode==7.4.2
+pyotp==2.9.0
+argon2-cffi==23.1.0
+
+# Database
+psycopg2-binary==2.9.9
+redis==5.0.1
+django-redis==5.4.0
+
+# Security
+cryptography==41.0.7
+python-jose[cryptography]==3.3.0
+pycryptodome==3.20.0
+
+# Utilities
+Pillow==10.1.0
+gunicorn==21.2.0
+whitenoise==6.6.0
+drf-yasg==1.21.7
+
+# Testing
+pytest==7.4.3
+pytest-django==4.7.0
+factory-boy==3.3.0
+
+# Production
+sentry-sdk==1.39.1
