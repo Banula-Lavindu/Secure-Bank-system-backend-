@@ -27,7 +27,9 @@ backend/
 └── scripts/                   # Utility scripts
 ```
 
-## Setup Instructions installation
+## Setup Instructions
 1. Install dependencies: `pip install -r requirements.txt`
+2. Configure database settings in `.env`
 3. Run migrations: `python manage.py migrate`
+4. Create superuser: `python manage.py createsuperuser`
 5. Run server: `python manage.py runserver`

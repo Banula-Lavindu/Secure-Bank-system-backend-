@@ -1821,3 +1821,873 @@ INFO 2025-04-27 00:17:29,363 basehttp "GET /api/v1/notifications/list/ HTTP/1.1"
 INFO 2025-04-27 00:18:30,295 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
 INFO 2025-04-27 00:19:32,211 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
 INFO 2025-04-27 00:20:32,142 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:21:32,057 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:22:32,023 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:23:32,962 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:24:32,910 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:25:32,860 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:26:32,799 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:27:32,739 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+ERROR 2025-04-27 00:28:32,729 exception_handlers API Error [ERR-1745693912]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-27 00:28:32,730 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 00:28:32,731 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 261
+ERROR 2025-04-27 00:28:33,602 exception_handlers API Error [ERR-1745693913]: Authentication credentials were not provided.
+WARNING 2025-04-27 00:28:33,603 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 00:28:33,603 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 00:28:33,607 exception_handlers API Error [ERR-1745693913]: Authentication credentials were not provided.
+WARNING 2025-04-27 00:28:33,608 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 00:28:33,608 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+INFO 2025-04-27 00:29:03,275 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-27 00:29:03,348 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 00:29:03,358 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 00:29:03,387 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-27 00:29:03,421 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-27 00:29:03,433 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-27 00:29:03,443 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-27 00:29:33,566 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:30:33,572 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:31:33,515 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:32:33,462 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:34:32,345 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:36:32,232 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:37:33,170 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:39:32,079 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:41:32,967 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:43:32,648 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:45:32,561 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:47:32,416 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:49:32,317 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:51:32,158 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:53:32,023 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:55:32,896 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 00:57:32,796 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+ERROR 2025-04-27 00:59:32,686 exception_handlers API Error [ERR-1745695772]: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+WARNING 2025-04-27 00:59:32,687 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 00:59:32,689 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 261
+ERROR 2025-04-27 00:59:33,647 exception_handlers API Error [ERR-1745695773]: Authentication credentials were not provided.
+WARNING 2025-04-27 00:59:33,648 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 00:59:33,649 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 00:59:33,654 exception_handlers API Error [ERR-1745695773]: Authentication credentials were not provided.
+WARNING 2025-04-27 00:59:33,655 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 00:59:33,656 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:00:33,612 exception_handlers API Error [ERR-1745695833]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:00:33,612 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:00:33,613 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:01:33,567 exception_handlers API Error [ERR-1745695893]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:01:33,568 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:01:33,568 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:02:33,517 exception_handlers API Error [ERR-1745695953]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:02:33,518 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:02:33,518 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:03:33,461 exception_handlers API Error [ERR-1745696013]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:03:33,461 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:03:33,462 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:05:32,336 exception_handlers API Error [ERR-1745696132]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:05:32,337 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:05:32,337 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:07:32,203 exception_handlers API Error [ERR-1745696252]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:07:32,204 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:07:32,204 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:09:32,117 exception_handlers API Error [ERR-1745696372]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:09:32,117 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:09:32,119 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:11:32,017 exception_handlers API Error [ERR-1745696492]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:11:32,017 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:11:32,018 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:13:33,216 exception_handlers API Error [ERR-1745696613]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:13:33,216 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:13:33,218 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:15:33,187 exception_handlers API Error [ERR-1745696733]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:15:33,188 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:15:33,189 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:17:32,704 exception_handlers API Error [ERR-1745696852]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:17:32,705 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:17:32,705 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:19:32,622 exception_handlers API Error [ERR-1745696972]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:19:32,622 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:19:32,624 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:21:32,811 exception_handlers API Error [ERR-1745697092]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:21:32,811 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:21:32,812 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:23:32,395 exception_handlers API Error [ERR-1745697212]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:23:32,395 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:23:32,396 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:25:32,276 exception_handlers API Error [ERR-1745697332]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:25:32,276 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:25:32,277 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:27:32,170 exception_handlers API Error [ERR-1745697452]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:27:32,171 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:27:32,172 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:29:32,082 exception_handlers API Error [ERR-1745697572]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:29:32,083 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:29:32,084 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:31:32,027 exception_handlers API Error [ERR-1745697692]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:31:32,028 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:31:32,029 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:33:32,891 exception_handlers API Error [ERR-1745697812]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:33:32,892 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:33:32,893 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:35:32,794 exception_handlers API Error [ERR-1745697932]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:35:32,796 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:35:32,797 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:37:32,671 exception_handlers API Error [ERR-1745698052]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:37:32,671 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:37:32,672 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:39:32,548 exception_handlers API Error [ERR-1745698172]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:39:32,548 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:39:32,549 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:41:32,417 exception_handlers API Error [ERR-1745698292]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:41:32,418 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:41:32,418 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:43:32,306 exception_handlers API Error [ERR-1745698412]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:43:32,307 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:43:32,307 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:45:32,191 exception_handlers API Error [ERR-1745698532]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:45:32,192 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:45:32,192 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:47:32,093 exception_handlers API Error [ERR-1745698652]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:47:32,128 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:47:32,128 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:49:32,985 exception_handlers API Error [ERR-1745698772]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:49:32,986 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:49:32,986 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:51:32,887 exception_handlers API Error [ERR-1745698892]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:51:32,887 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:51:32,888 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:53:32,777 exception_handlers API Error [ERR-1745699012]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:53:32,778 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:53:32,778 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:55:32,686 exception_handlers API Error [ERR-1745699132]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:55:32,687 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:55:32,687 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 01:57:32,582 exception_handlers API Error [ERR-1745699252]: Authentication credentials were not provided.
+WARNING 2025-04-27 01:57:32,582 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 01:57:32,584 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:06:39,826 exception_handlers API Error [ERR-1745728599]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:06:39,836 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:06:39,838 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:08:26,355 exception_handlers API Error [ERR-1745728706]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:08:26,355 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:08:26,356 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:08:26,360 exception_handlers API Error [ERR-1745728706]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:08:26,361 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:08:26,361 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:09:26,750 exception_handlers API Error [ERR-1745728766]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:09:26,751 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:09:26,751 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:10:26,684 exception_handlers API Error [ERR-1745728826]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:10:26,685 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:10:26,685 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:11:26,614 exception_handlers API Error [ERR-1745728886]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:11:26,615 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:11:26,615 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:12:26,804 exception_handlers API Error [ERR-1745728946]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:12:26,805 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:12:26,805 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:13:27,429 exception_handlers API Error [ERR-1745729007]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:13:27,429 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:13:27,430 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:14:27,380 exception_handlers API Error [ERR-1745729067]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:14:27,380 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:14:27,381 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:15:27,326 exception_handlers API Error [ERR-1745729127]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:15:27,327 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:15:27,327 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:16:28,255 exception_handlers API Error [ERR-1745729188]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:16:28,256 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:16:28,256 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:17:28,195 exception_handlers API Error [ERR-1745729248]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:17:28,196 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:17:28,196 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:18:28,153 exception_handlers API Error [ERR-1745729308]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:18:28,154 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:18:28,155 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:19:28,079 exception_handlers API Error [ERR-1745729368]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:19:28,081 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:19:28,081 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:20:28,044 exception_handlers API Error [ERR-1745729428]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:20:28,045 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:20:28,046 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:21:27,975 exception_handlers API Error [ERR-1745729487]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:21:27,975 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:21:27,976 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:22:27,888 exception_handlers API Error [ERR-1745729547]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:22:27,888 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:22:27,888 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:23:27,824 exception_handlers API Error [ERR-1745729607]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:23:27,824 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:23:27,825 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:24:27,758 exception_handlers API Error [ERR-1745729667]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:24:27,758 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:24:27,758 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:25:27,656 exception_handlers API Error [ERR-1745729727]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:25:27,656 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:25:27,657 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:26:27,590 exception_handlers API Error [ERR-1745729787]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:26:27,590 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:26:27,591 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:27:27,516 exception_handlers API Error [ERR-1745729847]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:27:27,518 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:27:27,518 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:28:27,439 exception_handlers API Error [ERR-1745729907]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:28:27,440 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:28:27,440 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:29:27,348 exception_handlers API Error [ERR-1745729967]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:29:27,348 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:29:27,349 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:30:27,288 exception_handlers API Error [ERR-1745730027]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:30:27,288 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:30:27,289 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:31:28,228 exception_handlers API Error [ERR-1745730088]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:31:28,229 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:31:28,229 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:32:28,176 exception_handlers API Error [ERR-1745730148]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:32:28,176 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:32:28,177 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:33:28,105 exception_handlers API Error [ERR-1745730208]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:33:28,106 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:33:28,106 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:34:28,055 exception_handlers API Error [ERR-1745730268]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:34:28,055 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:34:28,056 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:35:27,994 exception_handlers API Error [ERR-1745730327]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:35:27,994 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:35:27,995 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:36:27,939 exception_handlers API Error [ERR-1745730387]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:36:27,940 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:36:27,941 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:37:27,875 exception_handlers API Error [ERR-1745730447]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:37:27,875 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:37:27,876 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:38:27,820 exception_handlers API Error [ERR-1745730507]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:38:27,821 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:38:27,821 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:39:27,762 exception_handlers API Error [ERR-1745730567]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:39:27,762 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:39:27,763 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:40:27,702 exception_handlers API Error [ERR-1745730627]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:40:27,702 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:40:27,703 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:41:27,635 exception_handlers API Error [ERR-1745730687]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:41:27,635 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:41:27,636 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:42:27,568 exception_handlers API Error [ERR-1745730747]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:42:27,568 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:42:27,569 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:43:27,519 exception_handlers API Error [ERR-1745730807]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:43:27,520 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:43:27,520 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:44:27,459 exception_handlers API Error [ERR-1745730867]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:44:27,459 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:44:27,460 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:45:27,396 exception_handlers API Error [ERR-1745730927]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:45:27,396 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:45:27,397 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:46:27,336 exception_handlers API Error [ERR-1745730987]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:46:27,337 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:46:27,337 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:47:28,266 exception_handlers API Error [ERR-1745731048]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:47:28,267 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:47:28,268 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:48:28,218 exception_handlers API Error [ERR-1745731108]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:48:28,219 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:48:28,219 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:49:28,178 exception_handlers API Error [ERR-1745731168]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:49:28,178 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:49:28,179 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:50:28,151 exception_handlers API Error [ERR-1745731228]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:50:28,154 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:50:28,155 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:51:28,036 exception_handlers API Error [ERR-1745731288]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:51:28,038 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:51:28,038 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:52:28,041 exception_handlers API Error [ERR-1745731348]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:52:28,042 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:52:28,043 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:53:27,972 exception_handlers API Error [ERR-1745731407]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:53:27,973 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:53:27,973 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:54:27,924 exception_handlers API Error [ERR-1745731467]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:54:27,924 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:54:27,925 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:55:27,837 exception_handlers API Error [ERR-1745731527]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:55:27,837 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:55:27,837 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:56:27,794 exception_handlers API Error [ERR-1745731587]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:56:27,794 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:56:27,794 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:57:27,727 exception_handlers API Error [ERR-1745731647]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:57:27,727 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:57:27,728 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:58:27,665 exception_handlers API Error [ERR-1745731707]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:58:27,666 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:58:27,666 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 10:59:27,607 exception_handlers API Error [ERR-1745731767]: Authentication credentials were not provided.
+WARNING 2025-04-27 10:59:27,607 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 10:59:27,608 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:00:27,539 exception_handlers API Error [ERR-1745731827]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:00:27,540 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:00:27,541 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:01:27,469 exception_handlers API Error [ERR-1745731887]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:01:27,470 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:01:27,470 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:02:27,418 exception_handlers API Error [ERR-1745731947]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:02:27,419 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:02:27,419 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:03:27,346 exception_handlers API Error [ERR-1745732007]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:03:27,346 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:03:27,348 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:04:27,287 exception_handlers API Error [ERR-1745732067]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:04:27,288 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:04:27,289 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:05:27,279 exception_handlers API Error [ERR-1745732127]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:05:27,280 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:05:27,281 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:06:28,151 exception_handlers API Error [ERR-1745732188]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:06:28,151 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:06:28,152 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:07:28,086 exception_handlers API Error [ERR-1745732248]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:07:28,086 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:07:28,087 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:08:28,027 exception_handlers API Error [ERR-1745732308]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:08:28,028 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:08:28,029 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:09:27,978 exception_handlers API Error [ERR-1745732367]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:09:27,978 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:09:27,979 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:10:27,910 exception_handlers API Error [ERR-1745732427]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:10:27,911 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:10:27,911 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:11:27,847 exception_handlers API Error [ERR-1745732487]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:11:27,848 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:11:27,848 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:12:27,782 exception_handlers API Error [ERR-1745732547]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:12:27,782 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:12:27,783 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:13:27,714 exception_handlers API Error [ERR-1745732607]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:13:27,715 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:13:27,715 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:14:27,650 exception_handlers API Error [ERR-1745732667]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:14:27,650 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:14:27,651 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:15:27,657 exception_handlers API Error [ERR-1745732727]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:15:27,657 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:15:27,657 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:16:27,519 exception_handlers API Error [ERR-1745732787]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:16:27,520 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:16:27,520 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:17:27,443 exception_handlers API Error [ERR-1745732847]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:17:27,445 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:17:27,445 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:18:27,375 exception_handlers API Error [ERR-1745732907]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:18:27,376 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:18:27,377 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:19:27,328 exception_handlers API Error [ERR-1745732967]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:19:27,328 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:19:27,329 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:20:28,274 exception_handlers API Error [ERR-1745733028]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:20:28,279 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:20:28,280 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:21:28,209 exception_handlers API Error [ERR-1745733088]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:21:28,210 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:21:28,210 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:22:28,138 exception_handlers API Error [ERR-1745733148]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:22:28,139 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:22:28,139 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:23:28,076 exception_handlers API Error [ERR-1745733208]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:23:28,113 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:23:28,113 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:24:28,027 exception_handlers API Error [ERR-1745733268]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:24:28,029 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:24:28,029 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:25:27,949 exception_handlers API Error [ERR-1745733327]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:25:27,950 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:25:27,951 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:26:27,882 exception_handlers API Error [ERR-1745733387]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:26:27,883 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:26:27,883 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:27:27,831 exception_handlers API Error [ERR-1745733447]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:27:27,832 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:27:27,832 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:28:27,781 exception_handlers API Error [ERR-1745733507]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:28:27,782 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:28:27,783 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:29:27,712 exception_handlers API Error [ERR-1745733567]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:29:27,712 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:29:27,713 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:30:27,665 exception_handlers API Error [ERR-1745733627]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:30:27,666 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:30:27,666 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:31:27,598 exception_handlers API Error [ERR-1745733687]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:31:27,598 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:31:27,599 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:32:27,543 exception_handlers API Error [ERR-1745733747]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:32:27,544 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:32:27,544 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:33:27,502 exception_handlers API Error [ERR-1745733807]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:33:27,502 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:33:27,503 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:34:27,440 exception_handlers API Error [ERR-1745733867]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:34:27,440 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:34:27,441 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:35:27,373 exception_handlers API Error [ERR-1745733927]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:35:27,373 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:35:27,374 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:36:27,322 exception_handlers API Error [ERR-1745733987]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:36:27,323 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:36:27,323 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:37:28,247 exception_handlers API Error [ERR-1745734048]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:37:28,248 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:37:28,249 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:38:28,165 exception_handlers API Error [ERR-1745734108]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:38:28,166 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:38:28,166 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:39:28,109 exception_handlers API Error [ERR-1745734168]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:39:28,112 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:39:28,113 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:40:28,046 exception_handlers API Error [ERR-1745734228]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:40:28,047 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:40:28,047 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:41:27,994 exception_handlers API Error [ERR-1745734287]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:41:27,995 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:41:27,995 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:42:27,951 exception_handlers API Error [ERR-1745734347]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:42:27,952 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:42:27,952 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:43:27,871 exception_handlers API Error [ERR-1745734407]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:43:27,872 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:43:27,872 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:44:27,815 exception_handlers API Error [ERR-1745734467]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:44:27,815 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:44:27,816 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:45:27,821 exception_handlers API Error [ERR-1745734527]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:45:27,822 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:45:27,822 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:46:27,763 exception_handlers API Error [ERR-1745734587]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:46:27,763 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:46:27,764 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:47:27,699 exception_handlers API Error [ERR-1745734647]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:47:27,699 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:47:27,699 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:48:27,627 exception_handlers API Error [ERR-1745734707]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:48:27,629 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:48:27,629 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:49:27,549 exception_handlers API Error [ERR-1745734767]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:49:27,550 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:49:27,550 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:50:27,539 exception_handlers API Error [ERR-1745734827]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:50:27,540 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:50:27,542 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:51:27,448 exception_handlers API Error [ERR-1745734887]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:51:27,448 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:51:27,449 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:52:28,385 exception_handlers API Error [ERR-1745734948]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:52:28,386 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:52:28,386 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:53:28,324 exception_handlers API Error [ERR-1745735008]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:53:28,325 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:53:28,325 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:54:28,253 exception_handlers API Error [ERR-1745735068]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:54:28,254 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:54:28,254 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:55:28,186 exception_handlers API Error [ERR-1745735128]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:55:28,186 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:55:28,186 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:56:28,107 exception_handlers API Error [ERR-1745735188]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:56:28,107 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:56:28,108 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:57:28,044 exception_handlers API Error [ERR-1745735248]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:57:28,046 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:57:28,046 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:58:27,971 exception_handlers API Error [ERR-1745735307]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:58:27,972 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:58:27,972 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 11:59:27,844 exception_handlers API Error [ERR-1745735367]: Authentication credentials were not provided.
+WARNING 2025-04-27 11:59:27,845 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 11:59:27,845 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:00:27,784 exception_handlers API Error [ERR-1745735427]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:00:27,785 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:00:27,785 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:01:27,728 exception_handlers API Error [ERR-1745735487]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:01:27,728 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:01:27,728 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:02:27,651 exception_handlers API Error [ERR-1745735547]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:02:27,652 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:02:27,652 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:03:27,603 exception_handlers API Error [ERR-1745735607]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:03:27,604 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:03:27,604 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:04:27,539 exception_handlers API Error [ERR-1745735667]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:04:27,540 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:04:27,540 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:05:27,474 exception_handlers API Error [ERR-1745735727]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:05:27,474 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:05:27,474 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:06:27,414 exception_handlers API Error [ERR-1745735787]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:06:27,414 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:06:27,415 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:07:27,359 exception_handlers API Error [ERR-1745735847]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:07:27,359 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:07:27,360 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:08:28,287 exception_handlers API Error [ERR-1745735908]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:08:28,288 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:08:28,288 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:09:28,217 exception_handlers API Error [ERR-1745735968]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:09:28,217 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:09:28,219 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:10:28,189 exception_handlers API Error [ERR-1745736028]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:10:28,189 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:10:28,191 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:11:28,112 exception_handlers API Error [ERR-1745736088]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:11:28,112 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:11:28,112 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:12:28,058 exception_handlers API Error [ERR-1745736148]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:12:28,059 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:12:28,059 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:13:27,991 exception_handlers API Error [ERR-1745736207]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:13:27,992 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:13:27,992 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:14:27,943 exception_handlers API Error [ERR-1745736267]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:14:27,943 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:14:27,944 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:15:27,879 exception_handlers API Error [ERR-1745736327]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:15:27,879 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:15:27,880 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:16:27,835 exception_handlers API Error [ERR-1745736387]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:16:27,835 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:16:27,837 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:17:27,764 exception_handlers API Error [ERR-1745736447]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:17:27,764 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:17:27,764 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:18:27,691 exception_handlers API Error [ERR-1745736507]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:18:27,691 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:18:27,691 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:19:27,654 exception_handlers API Error [ERR-1745736567]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:19:27,655 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:19:27,655 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:20:27,602 exception_handlers API Error [ERR-1745736627]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:20:27,603 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:20:27,603 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:21:27,523 exception_handlers API Error [ERR-1745736687]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:21:27,524 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:21:27,524 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:22:27,458 exception_handlers API Error [ERR-1745736747]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:22:27,458 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:22:27,459 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:23:27,407 exception_handlers API Error [ERR-1745736807]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:23:27,408 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:23:27,408 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:24:27,357 exception_handlers API Error [ERR-1745736867]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:24:27,357 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:24:27,359 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:25:27,354 exception_handlers API Error [ERR-1745736927]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:25:27,355 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:25:27,356 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:26:28,253 exception_handlers API Error [ERR-1745736988]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:26:28,253 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:26:28,254 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:27:28,194 exception_handlers API Error [ERR-1745737048]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:27:28,194 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:27:28,195 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:28:28,129 exception_handlers API Error [ERR-1745737108]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:28:28,129 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:28:28,130 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:29:28,069 exception_handlers API Error [ERR-1745737168]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:29:28,070 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:29:28,071 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:30:27,995 exception_handlers API Error [ERR-1745737227]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:30:27,995 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:30:27,996 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:31:27,942 exception_handlers API Error [ERR-1745737287]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:31:27,943 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:31:27,944 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:32:27,863 exception_handlers API Error [ERR-1745737347]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:32:27,864 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:32:27,864 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:33:27,801 exception_handlers API Error [ERR-1745737407]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:33:27,801 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:33:27,802 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:34:27,726 exception_handlers API Error [ERR-1745737467]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:34:27,727 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:34:27,727 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:35:27,659 exception_handlers API Error [ERR-1745737527]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:35:27,660 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:35:27,660 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:36:27,605 exception_handlers API Error [ERR-1745737587]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:36:27,605 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:36:27,606 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:37:27,536 exception_handlers API Error [ERR-1745737647]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:37:27,537 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:37:27,537 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:38:27,496 exception_handlers API Error [ERR-1745737707]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:38:27,497 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:38:27,498 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:39:27,433 exception_handlers API Error [ERR-1745737767]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:39:27,434 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:39:27,434 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:40:27,370 exception_handlers API Error [ERR-1745737827]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:40:27,371 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:40:27,372 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:41:27,385 exception_handlers API Error [ERR-1745737887]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:41:27,385 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:41:27,386 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:42:28,330 exception_handlers API Error [ERR-1745737948]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:42:28,331 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:42:28,332 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:43:28,570 exception_handlers API Error [ERR-1745738008]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:43:28,570 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:43:28,572 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:44:28,174 exception_handlers API Error [ERR-1745738068]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:44:28,175 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:44:28,176 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:45:28,123 exception_handlers API Error [ERR-1745738128]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:45:28,123 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:45:28,124 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:46:28,063 exception_handlers API Error [ERR-1745738188]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:46:28,063 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:46:28,064 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:47:28,020 exception_handlers API Error [ERR-1745738248]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:47:28,020 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:47:28,021 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:48:27,959 exception_handlers API Error [ERR-1745738307]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:48:27,960 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:48:27,960 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:49:27,901 exception_handlers API Error [ERR-1745738367]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:49:27,901 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:49:27,902 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:50:27,836 exception_handlers API Error [ERR-1745738427]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:50:27,836 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:50:27,837 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:51:27,779 exception_handlers API Error [ERR-1745738487]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:51:27,780 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:51:27,781 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:52:28,072 exception_handlers API Error [ERR-1745738548]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:52:28,072 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:52:28,072 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:53:27,582 exception_handlers API Error [ERR-1745738607]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:53:27,582 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:53:27,583 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:54:27,526 exception_handlers API Error [ERR-1745738667]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:54:27,527 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:54:27,528 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:55:27,513 exception_handlers API Error [ERR-1745738727]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:55:27,513 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:55:27,514 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:56:27,387 exception_handlers API Error [ERR-1745738787]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:56:27,387 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:56:27,388 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:57:28,316 exception_handlers API Error [ERR-1745738848]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:57:28,316 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:57:28,318 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:58:28,316 exception_handlers API Error [ERR-1745738908]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:58:28,318 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:58:28,318 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 12:59:28,180 exception_handlers API Error [ERR-1745738968]: Authentication credentials were not provided.
+WARNING 2025-04-27 12:59:28,181 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 12:59:28,181 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:00:28,114 exception_handlers API Error [ERR-1745739028]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:00:28,114 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:00:28,115 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:01:28,066 exception_handlers API Error [ERR-1745739088]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:01:28,067 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:01:28,067 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:02:28,007 exception_handlers API Error [ERR-1745739148]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:02:28,007 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:02:28,008 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:03:27,950 exception_handlers API Error [ERR-1745739207]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:03:27,952 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:03:27,953 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:04:27,916 exception_handlers API Error [ERR-1745739267]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:04:27,917 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:04:27,917 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:05:27,903 exception_handlers API Error [ERR-1745739327]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:05:27,903 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:05:27,904 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:06:27,771 exception_handlers API Error [ERR-1745739387]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:06:27,773 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:06:27,773 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:07:27,749 exception_handlers API Error [ERR-1745739447]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:07:27,751 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:07:27,752 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:08:27,668 exception_handlers API Error [ERR-1745739507]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:08:27,668 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:08:27,669 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:09:27,602 exception_handlers API Error [ERR-1745739567]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:09:27,602 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:09:27,603 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:10:27,545 exception_handlers API Error [ERR-1745739627]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:10:27,545 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:10:27,546 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:11:27,489 exception_handlers API Error [ERR-1745739687]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:11:27,490 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:11:27,491 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:12:27,435 exception_handlers API Error [ERR-1745739747]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:12:27,435 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:12:27,436 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:13:27,361 exception_handlers API Error [ERR-1745739807]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:13:27,362 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:13:27,362 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:14:28,299 exception_handlers API Error [ERR-1745739868]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:14:28,301 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:14:28,301 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:15:28,244 exception_handlers API Error [ERR-1745739928]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:15:28,245 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:15:28,245 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:16:28,178 exception_handlers API Error [ERR-1745739988]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:16:28,180 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:16:28,180 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:17:28,125 exception_handlers API Error [ERR-1745740048]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:17:28,126 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:17:28,126 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:18:28,067 exception_handlers API Error [ERR-1745740108]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:18:28,068 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:18:28,068 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:19:27,983 exception_handlers API Error [ERR-1745740167]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:19:27,985 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:19:27,985 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:20:27,938 exception_handlers API Error [ERR-1745740227]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:20:27,938 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:20:27,939 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:21:27,890 exception_handlers API Error [ERR-1745740287]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:21:27,890 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:21:27,890 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:22:27,831 exception_handlers API Error [ERR-1745740347]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:22:27,832 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:22:27,832 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:23:27,772 exception_handlers API Error [ERR-1745740407]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:23:27,772 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:23:27,774 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:24:27,727 exception_handlers API Error [ERR-1745740467]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:24:27,727 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:24:27,728 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:25:27,668 exception_handlers API Error [ERR-1745740527]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:25:27,668 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:25:27,669 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:26:27,614 exception_handlers API Error [ERR-1745740587]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:26:27,615 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:26:27,616 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:27:27,523 exception_handlers API Error [ERR-1745740647]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:27:27,524 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:27:27,524 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:28:28,072 exception_handlers API Error [ERR-1745740708]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:28:28,073 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:28:28,075 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:29:28,019 exception_handlers API Error [ERR-1745740768]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:29:28,021 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:29:28,022 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:30:28,011 exception_handlers API Error [ERR-1745740828]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:30:28,011 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:30:28,011 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:31:27,892 exception_handlers API Error [ERR-1745740887]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:31:27,893 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:31:27,894 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:32:27,835 exception_handlers API Error [ERR-1745740947]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:32:27,835 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:32:27,836 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:33:27,769 exception_handlers API Error [ERR-1745741007]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:33:27,770 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:33:27,771 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:34:27,703 exception_handlers API Error [ERR-1745741067]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:34:27,703 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:34:27,704 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:35:27,651 exception_handlers API Error [ERR-1745741127]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:35:27,651 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:35:27,651 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:36:27,564 exception_handlers API Error [ERR-1745741187]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:36:27,564 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:36:27,565 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:37:27,544 exception_handlers API Error [ERR-1745741247]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:37:27,546 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:37:27,547 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:38:27,451 exception_handlers API Error [ERR-1745741307]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:38:27,452 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:38:27,453 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:39:27,400 exception_handlers API Error [ERR-1745741367]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:39:27,400 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:39:27,401 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:40:27,345 exception_handlers API Error [ERR-1745741427]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:40:27,345 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:40:27,347 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:41:28,282 exception_handlers API Error [ERR-1745741488]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:41:28,283 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:41:28,283 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:42:28,244 exception_handlers API Error [ERR-1745741548]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:42:28,246 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:42:28,247 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:43:28,187 exception_handlers API Error [ERR-1745741608]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:43:28,188 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:43:28,188 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:44:28,124 exception_handlers API Error [ERR-1745741668]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:44:28,126 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:44:28,127 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:45:28,054 exception_handlers API Error [ERR-1745741728]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:45:28,055 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:45:28,056 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:46:27,978 exception_handlers API Error [ERR-1745741787]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:46:27,979 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:46:27,979 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:47:27,895 exception_handlers API Error [ERR-1745741847]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:47:27,896 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:47:27,896 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:48:27,814 exception_handlers API Error [ERR-1745741907]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:48:27,815 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:48:27,816 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:49:27,775 exception_handlers API Error [ERR-1745741967]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:49:27,776 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:49:27,776 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:50:27,713 exception_handlers API Error [ERR-1745742027]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:50:27,714 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:50:27,714 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:51:27,667 exception_handlers API Error [ERR-1745742087]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:51:27,669 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:51:27,670 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 13:52:27,598 exception_handlers API Error [ERR-1745742147]: Authentication credentials were not provided.
+WARNING 2025-04-27 13:52:27,600 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 13:52:27,602 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 18:40:07,995 exception_handlers API Error [ERR-1745759407]: Authentication credentials were not provided.
+WARNING 2025-04-27 18:40:08,002 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 18:40:08,003 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+ERROR 2025-04-27 18:40:08,012 exception_handlers API Error [ERR-1745759408]: Authentication credentials were not provided.
+WARNING 2025-04-27 18:40:08,012 log Unauthorized: /api/v1/notifications/list/
+WARNING 2025-04-27 18:40:08,013 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 401 140
+INFO 2025-04-27 18:40:15,916 basehttp "OPTIONS /api/v1/auth/login/ HTTP/1.1" 200 0
+INFO 2025-04-27 18:40:16,158 basehttp "POST /api/v1/auth/login/ HTTP/1.1" 200 684
+INFO 2025-04-27 18:40:16,229 basehttp "OPTIONS /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 0
+INFO 2025-04-27 18:40:16,229 basehttp "OPTIONS /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 0
+INFO 2025-04-27 18:40:16,259 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 18:40:16,264 basehttp "OPTIONS /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 0
+INFO 2025-04-27 18:40:16,285 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 18:40:16,330 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-27 18:40:16,336 basehttp "OPTIONS /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 0
+INFO 2025-04-27 18:40:16,360 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-27 18:40:16,377 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-27 18:40:16,517 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-27 18:41:07,794 basehttp "OPTIONS /api/v1/notifications/list/ HTTP/1.1" 200 0
+INFO 2025-04-27 18:41:07,801 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 18:42:07,725 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 18:43:07,646 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 18:44:07,572 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 18:45:07,584 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 18:46:23,514 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 18:47:24,091 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 18:47:56,460 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 18:47:56,463 basehttp "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-04-27 18:47:56,465 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+INFO 2025-04-27 18:47:56,467 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+INFO 2025-04-27 18:47:56,469 basehttp "OPTIONS /api/v1/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-04-27 18:47:56,470 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+INFO 2025-04-27 18:47:56,473 basehttp "OPTIONS /api/v1/accounts/preferences/ HTTP/1.1" 200 0
+INFO 2025-04-27 18:47:56,481 basehttp "GET /api/v1/notifications/list/ HTTP/1.1" 200 847
+INFO 2025-04-27 18:47:56,507 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-27 18:47:56,517 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-27 18:47:56,530 basehttp "GET /api/v1/auth/profile/ HTTP/1.1" 200 247
+INFO 2025-04-27 18:47:56,549 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-27 18:47:56,557 basehttp "GET /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-27 18:47:56,573 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
+INFO 2025-04-27 18:47:56,631 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 18:47:56,638 basehttp "GET /api/v1/accounts/bank-accounts/ HTTP/1.1" 200 1723
+INFO 2025-04-27 18:47:56,667 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-27 18:47:56,689 basehttp "GET /api/v1/transactions/list/?limit=5 HTTP/1.1" 200 10509
+INFO 2025-04-27 18:47:56,697 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-27 18:47:56,706 basehttp "GET /api/v1/notifications/list/?limit=5&unreadOnly=true HTTP/1.1" 200 847
+INFO 2025-04-27 18:47:56,954 basehttp "PUT /api/v1/accounts/preferences/ HTTP/1.1" 200 64
